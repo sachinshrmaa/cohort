@@ -1,7 +1,7 @@
 
 const Privacy = () => {
     return (  
-        <div className="col-md-8 col-11 m-auto">
+        <div>
             <h2>Privacy Policy</h2>
 
             <p>At [Company Name], we are committed to protecting the privacy of our users. This Privacy Policy explains how we collect, use, and share information about you when you use our website and online courses.</p>
