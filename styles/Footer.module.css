@@ -14,3 +14,11 @@
     color: #000;
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
+
+@media only screen and (max-width: 600px) {
+
+    .footerSection{
+        height: 200px;
+    }
+
+}

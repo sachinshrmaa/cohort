@@ -12,3 +12,18 @@ p, li, a{
     font-family: 'Public Sans', sans-serif;
 }
 
+
+
+
+.pageLayout{
+    height: auto;
+    min-height: 75vh;
+    padding: 60px 10px;
+}
+
+.subHeading{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}

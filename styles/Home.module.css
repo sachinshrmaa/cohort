@@ -44,9 +44,11 @@
     color: #000;
 }
 
+
+
 .mainSection{
     padding: 100px 0;
-    height: 800px;
+    height: 600px;
 }
 
 .subHeading{
@@ -82,3 +84,32 @@
 
 
 
+
+@media only screen and (max-width: 600px) {
+
+    .heroSection{
+        height: auto;
+        padding: 100px 0;
+    }
+
+    .heroImg{
+        display: none;
+    }
+
+    .emailInp{
+        width: 60%;
+    }
+
+    .emailSubmit{
+        width: 30%;
+        font-weight: 600;
+        padding: 0 5px;
+    }
+
+
+    .mainSection{
+        padding: 50px 0;
+        height: auto;
+    }
+
+}

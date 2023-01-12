@@ -1,26 +1,33 @@
 import Link from "next/link";
+import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
 const Home = () => {
   return (  
     <div>
 
+      <Head>
+        <title>the basics</title>
+        <meta name="description" content="A series of live cohort which intents to teach you the basics from scratch." />
+  
+      </Head>
 
       <div className={styles.heroSection}>
-        <div className="col-md-10 m-auto">
+        <div className="col-md-10 col-11 m-auto">
           <div className="row align-items-center">
-            <div className="col-md-6">
+            <div className="col-md-6 col-12">
               <h1 className={styles.heroTitle}>Cohorts</h1>
               <p>Our workshop kit offers a range of exercises you can run with your team to put the Guidebook’s design patterns into practice in your product.</p>
 
-              <form action="#" className="mt-5">
+              <form action="#" className="mt-md-5 mt-4">
                 <input type="email" placeholder="yourmail@gmail.com" className={styles.emailInp} />
                 <input type="submit" value="get early access →" className={styles.emailSubmit} />
+               
               </form>
               <p className="text-mute mt-2"><small>by joining you agree the <Link href='/terms' className="text-decoration-none">terms</Link> and <Link href='/privacy' className="text-decoration-none">privacy policy</Link>. </small></p>
 
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 col">
               <img src="img/heroImg.png" alt="" className={styles.heroImg} />
             </div>
           </div>
@@ -31,10 +38,10 @@ const Home = () => {
 
       <div className={styles.mainSection}>
 
-        <div className="col-md-10 m-auto">
+        <div className="col-md-10 col-11 m-auto">
           <div className="row">
 
-            <div className="col-md-4">
+            <div className="col-md-4 mb-3">
 
               <h2 className={styles.subHeading}>Get Started</h2>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus nihil quia a culpa!</p>
@@ -51,7 +58,7 @@ const Home = () => {
 
               <div className="card">
                 <div class="row g-0">
-                  <div class="col-md-7">
+                  <div class="col-md-7 order-md-1 order-2">
                     <div className="card-body">
                       <small className={styles.tags}>Upcomming</small> <small className={styles.tags}>free</small>
                       <h2 className="card-title mt-2">Git and GitHub basics</h2>
@@ -65,7 +72,7 @@ const Home = () => {
                     </div>
                   </div>
 
-                  <div class="col-md-4 m-4">
+                  <div class="col-md-4 m-md-4 m-0 order-md-2 order-1 ">
                     <img src="https://pair.withgoogle.com/guidebook/images/ui-elements/workshop-top.jpg" class="img-fluid rounded-start" alt="..." />
                   </div>
                 </div>
