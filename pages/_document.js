@@ -7,6 +7,7 @@ export default function Document() {
   return (
     <Html>
       <Head />
+      <link rel="icon" href="/img/sachinsblog.png" />
         
       <body>
         <Main />
