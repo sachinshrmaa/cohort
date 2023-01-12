@@ -21,7 +21,7 @@ const Home = () => {
 
               <form action="#" className="mt-md-5 mt-4">
                 <input type="email" placeholder="yourmail@gmail.com" className={styles.emailInp} />
-                <input type="submit" value="get early access →" className={styles.emailSubmit} />
+                <input type="submit" value="join waitlist →" className={styles.emailSubmit} />
                
               </form>
               <p className="text-mute mt-2"><small>by joining you agree the <Link href='/terms' className="text-decoration-none">terms</Link> and <Link href='/privacy' className="text-decoration-none">privacy policy</Link>. </small></p>
@@ -73,7 +73,7 @@ const Home = () => {
                   </div>
 
                   <div class="col-md-4 m-md-4 m-0 order-md-2 order-1 ">
-                    <img src="https://pair.withgoogle.com/guidebook/images/ui-elements/workshop-top.jpg" class="img-fluid rounded-start" alt="..." />
+                    <img src="/img/git.png" class="img-fluid rounded-start" alt="..." />
                   </div>
                 </div>
               </div>
