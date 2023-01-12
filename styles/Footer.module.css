@@ -1,0 +1,16 @@
+
+
+.footerSection{
+    background-color:  #bfecff;
+    height: 180px;
+    padding: 50px 0;
+}
+
+.footerBrand{
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #000;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
