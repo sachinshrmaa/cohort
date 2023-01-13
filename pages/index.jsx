@@ -19,11 +19,23 @@ const Home = () => {
               <h1 className={styles.heroTitle}>Cohorts</h1>
               <p>Our workshop kit offers a range of exercises you can run with your team to put the Guidebook’s design patterns into practice in your product.</p>
 
-              <form action="#" className="mt-md-5 mt-4">
-                <input type="email" placeholder="yourmail@gmail.com" className={styles.emailInp} />
-                <input type="submit" value="join waitlist →" className={styles.emailSubmit} />
+              <form action="https://sachinsblog.us10.list-manage.com/subscribe/post?u=5e93d1e3a83679d27d02d635f&amp;id=13e8fc99a7&amp;f_id=0050cbe5f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="mt-md-5 mt-4 validate" target="_self">
+                <input type="email"  name="EMAIL" id="mce-EMAIL" placeholder="yourmail@gmail.com" className={styles.emailInp} />
+                <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+                
+                  <div class="response d-none" id="mce-error-response" ></div>
+                  <div class="response d-none" id="mce-success-response"></div>
+                {/* <div id="mce-responses">
+                    <div class="response d-none" id="mce-error-response" ></div>
+                    <div class="response d-none" id="mce-success-response"></div>
+                </div>  */}
+                <div className="d-none" aria-hidden="true">
+                    <input type="text" name="b_5e93d1e3a83679d27d02d635f_13e8fc99a7" tabindex="-1" value="" />
+                </div>
+                <input type="submit" value="join waitlist →" id="mc-embedded-subscribe" name="subscribe" className={styles.emailSubmit} />
                
               </form>
+
               <p className="text-mute mt-2"><small>by joining you agree the <Link href='/terms' className="text-decoration-none">terms</Link> and <Link href='/privacy' className="text-decoration-none">privacy policy</Link>. </small></p>
 
             </div>
@@ -85,14 +97,6 @@ const Home = () => {
             </div>
 
           </div>
-
-      </div>
-
-      
-
-      <div className="col-md-10 m-auto">
-
-        
 
       </div>
 
