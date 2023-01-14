@@ -27,3 +27,21 @@ p, li, a{
     font-weight: 700;
     margin-bottom: 20px;
 }
+
+.card-title{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
+.card:hover{
+    box-shadow: 0px 3px 15px 5px #efefef;
+}
+
+
+
+.form-meta{
+position: absolute; 
+left: -5000px;
+}
