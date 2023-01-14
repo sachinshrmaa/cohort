@@ -107,13 +107,13 @@ const Home = () => {
                 </div>
               </div>
 
-              <div className="card my-5">
+              {/* <div className="card my-5">
                 <div class="row g-0">
                   <div class="col-md-7 order-md-1 order-2">
                     <div className="card-body">
                       <small className={styles.tags}>Upcomming</small>
                       <h2 className="card-title mt-2">Introduction to Machine Learning</h2>
-                      <p className="card-text">Git is a free and open-source version control system, originally created by Linus Torvalds in 2005. </p>
+                      <p className="card-text">Introductory 3 days course about the basics of machine learning.  </p>
                       <ul>
                         <li>Live session 👨🏻‍💻</li>
                         <li>Resources 📑</li>
@@ -129,7 +129,7 @@ const Home = () => {
                     <img src="/img/git.png" class="img-fluid rounded-start" alt="..." />
                   </div>
                 </div>
-              </div>
+              </div> */}
 
             </div>
 

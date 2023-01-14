@@ -8,6 +8,11 @@
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
+.nav-link{
+    color: #1f2d89;
+}
+
+
 p, li, a{
     font-family: 'Public Sans', sans-serif;
 }
@@ -42,6 +47,6 @@ p, li, a{
 
 
 .form-meta{
-position: absolute; 
-left: -5000px;
+    position: absolute; 
+    left: -5000px;
 }
