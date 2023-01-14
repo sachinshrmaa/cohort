@@ -11,7 +11,7 @@ const Privacy = () => {
       </Head>
             <h2 className="subHeading">Privacy Policy</h2>
 
-            <p>At <b>cohorts.sachinsblog.in</b>, we are committed to protecting the privacy of our users. This Privacy Policy explains how we collect, use, and share information about you when you use our website and online courses.</p>
+            <p>At <b>the basics</b>, we are committed to protecting the privacy of our users. This Privacy Policy explains how we collect, use, and share information about you when you use our website and online courses.</p>
 
             <p><b>Information We Collect:</b> We collect information about you when you register for one of our courses, complete a form on our website, or interact with us through other channels such as email. This information may include your name, email address, phone number, and other contact details.</p>
 
