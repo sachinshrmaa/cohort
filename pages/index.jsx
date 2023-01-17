@@ -2,15 +2,30 @@ import Link from "next/link";
 import Head from 'next/head'
 
 import styles from '../styles/Home.module.css'
+import CourseCard from "../components/CourseCard"
 
-const Home = () => {
+
+
+export async function getStaticProps() {
+  const res = await fetch('http://thebasics.sachinsblog.in/api/courses')
+  const courses = await res.json()
+
+  return {
+      props: {
+          courses
+      }
+  } 
+}
+
+
+
+const Home = ({courses}) => {
   return (  
     <div>
 
       <Head>
         <title>the basics</title>
         <meta name="description" content="A series of live cohort which intents to teach you the basics from scratch." />
-  
       </Head>
 
       <div className={styles.heroSection}>
@@ -42,7 +57,7 @@ const Home = () => {
                       <div className="col-md-6 col-12 mt-3 mt-md-0">
                           <div class="optionalParent">
                             <div class="clear foot">
-                              <input type="submit" value="join waitlist →" name="subscribe" id="mc-embedded-subscribe" className={styles.emailSubmit} />
+                              <input type="submit" value="join waitlist &rarr;" name="subscribe" id="mc-embedded-subscribe" className={styles.emailSubmit} />
                             </div>
                           </div>
                       </div>
@@ -84,59 +99,17 @@ const Home = () => {
 
             <div className="col-md-8">
 
-              <div className="card">
-                <div class="row g-0">
-                  <div class="col-md-7 order-md-1 order-2">
-                    <div className="card-body">
-                      <small className={styles.tags}>Upcomming</small>
-                      <h2 className="card-title mt-2">Getting started with Python</h2>
-                      <p className="card-text">Learn the most important language for Data Science, if you have no coding experience. </p>
-                      <ul>
-                        <li>Live session 👨🏻‍💻</li>
-                        <li>Resources 📑</li>
-                        <li>Newsletter ✉️</li>
-                        <li>Private  community 👥</li>
-                        <li>QnA 🙋</li>
-                      </ul>
-                      <a href="#" className={styles.enrollBtn}>Join Waitlist → </a>
-
-
-                    </div>
-                  </div>
-
-                  <div class="col-md-4 m-md-4 m-0 order-md-2 order-1 ">
-                    <img src="/img/python-course.png" class="img-fluid rounded-start" alt="Getting started with Python" />
-                  </div>
-                </div>
-              </div>
-
-              <div className="card my-5">
-                <div class="row g-0">
-                  <div class="col-md-7 order-md-1 order-2">
-                    <div className="card-body">
-                      <small className={styles.tags}>Upcomming</small>
-                      <h2 className="card-title mt-2">Introduction to Machine Learning</h2>
-                      <p className="card-text">Learn the core ideas in machine learning, and build your first models. </p>
-                      <ul>
-                        <li>Live session 👨🏻‍💻</li>
-                        <li>Resources 📑</li>
-                        <li>Newsletter ✉️</li>
-                        <li>Private  community 👥</li>
-                        <li>QnA 🙋</li>
-                      </ul>
-                      <a href="#" className={styles.enrollBtn}>Join Waitlist → </a>
-                    </div>
-                  </div>
-
-                  <div class="col-md-4 m-md-4 m-0 order-md-2 order-1 ">
-                    <img src="/img/ml-course.png" class="img-fluid rounded-start" alt="Introduction to Machine Learning" />
-                  </div>
-                </div>
-              </div>
+                {courses.map(course => (
+                  <CourseCard 
+                      title={course.title}
+                      description={course.description}
+                      slug={course.slug}
+                      price={course.price}
+                      thumbnail={course.thumbnail}
+                  />
+                ))}
 
             </div>
-
-
 
             </div>
 

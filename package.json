@@ -16,6 +16,7 @@
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@mui/material": "^5.11.4",
+    "axios": "^1.2.2",
     "bootstrap": "^5.2.3",
     "next": "^13.1.1",
     "razorpay": "^2.8.4",
