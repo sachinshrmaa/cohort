@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Head from 'next/head'
+
 import styles from '../styles/Home.module.css'
 
 const Home = () => {
@@ -87,9 +88,9 @@ const Home = () => {
                 <div class="row g-0">
                   <div class="col-md-7 order-md-1 order-2">
                     <div className="card-body">
-                      <small className={styles.tags}>Upcomming</small> <small className={styles.tags}>free</small>
-                      <h2 className="card-title mt-2">Git and GitHub basics</h2>
-                      <p className="card-text">Git is a free and open-source version control system, originally created by Linus Torvalds in 2005. </p>
+                      <small className={styles.tags}>Upcomming</small>
+                      <h2 className="card-title mt-2">Getting started with Python</h2>
+                      <p className="card-text">Learn the most important language for Data Science, if you have no coding experience. </p>
                       <ul>
                         <li>Live session 👨🏻‍💻</li>
                         <li>Resources 📑</li>
@@ -97,23 +98,25 @@ const Home = () => {
                         <li>Private  community 👥</li>
                         <li>QnA 🙋</li>
                       </ul>
-                      <a href="#" className={styles.enrollBtn}>Enroll Closed → </a>
+                      <a href="#" className={styles.enrollBtn}>Join Waitlist → </a>
+
+
                     </div>
                   </div>
 
                   <div class="col-md-4 m-md-4 m-0 order-md-2 order-1 ">
-                    <img src="/img/git.png" class="img-fluid rounded-start" alt="..." />
+                    <img src="/img/python-course.png" class="img-fluid rounded-start" alt="Getting started with Python" />
                   </div>
                 </div>
               </div>
 
-              {/* <div className="card my-5">
+              <div className="card my-5">
                 <div class="row g-0">
                   <div class="col-md-7 order-md-1 order-2">
                     <div className="card-body">
                       <small className={styles.tags}>Upcomming</small>
                       <h2 className="card-title mt-2">Introduction to Machine Learning</h2>
-                      <p className="card-text">Introductory 3 days course about the basics of machine learning.  </p>
+                      <p className="card-text">Learn the core ideas in machine learning, and build your first models. </p>
                       <ul>
                         <li>Live session 👨🏻‍💻</li>
                         <li>Resources 📑</li>
@@ -121,15 +124,15 @@ const Home = () => {
                         <li>Private  community 👥</li>
                         <li>QnA 🙋</li>
                       </ul>
-                      <a href="#" className={styles.enrollBtn}>Enroll Closed  ₹ 249.0 → </a>
+                      <a href="#" className={styles.enrollBtn}>Join Waitlist → </a>
                     </div>
                   </div>
 
                   <div class="col-md-4 m-md-4 m-0 order-md-2 order-1 ">
-                    <img src="/img/git.png" class="img-fluid rounded-start" alt="..." />
+                    <img src="/img/ml-course.png" class="img-fluid rounded-start" alt="Introduction to Machine Learning" />
                   </div>
                 </div>
-              </div> */}
+              </div>
 
             </div>
 
