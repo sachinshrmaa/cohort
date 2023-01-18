@@ -1,22 +1,26 @@
 import Link from "next/link";
+import Head from "next/head";
+
 import styles from '../styles/CourseCard.module.css'
 
 
 export async function getStaticPaths() {
-    const res = await fetch('http://thebasics.sachinsblog.in/api/courses')
+    const res = await fetch('http://localhost:3000/api/courses')
     const courses = await res.json()
     const paths = courses.map(course => ({
         params: { slug: course.slug },
     }));
 
+
     return {
         paths,
-        fallback: false,
+        fallback: true,
     };
 }
 
+
 export async function getStaticProps({ params }) {
-    const res = await fetch('http://thebasics.sachinsblog.in/api/courses')
+    const res = await fetch('http://localhost:3000/api/courses')
     const courses = await res.json()
     const course = courses.find(course => course.slug === params.slug);
 
@@ -32,6 +36,11 @@ export async function getStaticProps({ params }) {
 export default function Post({ course }) {
     return (
         <div className="col-md-8 col-11 m-auto pageLayout">
+
+            <Head>
+                <title>{course.title} - the basics</title>
+                <meta name="description" content="A series of live cohort which intents to teach you the basics from scratch." />
+            </Head>
 
             <Link href="/" className="text-decoration-none"> &larr; back to home </Link>
 

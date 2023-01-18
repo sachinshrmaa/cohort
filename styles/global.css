@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Plus+Jakarta+Sans&family=Public+Sans&display=swap');
 
+body {
+    -webkit-text-size-adjust: 100%;
+}
+
+th {
+    text-align: -webkit-match-parent;
+}
+
+
 #logo{
     font-size: 20px;
     font-weight: 900;

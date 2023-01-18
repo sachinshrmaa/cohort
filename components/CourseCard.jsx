@@ -6,8 +6,8 @@ import styles from '../styles/CourseCard.module.css'
 export default function CourseCard({title, description, price, thumbnail, slug}){
     return(
         <div className="card mb-5">
-            <div class="row g-0">
-                <div class="col-md-7 order-md-1 order-2">
+            <div className="row g-0">
+                <div className="col-md-7 order-md-1 order-2">
                     <div className="card-body">
                         <small className={styles.tags}>Upcomming</small>
                         <h2 className="card-title mt-2">{title}</h2>
@@ -23,8 +23,8 @@ export default function CourseCard({title, description, price, thumbnail, slug})
                     </div>
                 </div>
 
-                <div class="col-md-4 m-md-4 m-0 order-md-2 order-1 ">
-                    <img src={thumbnail} class="img-fluid rounded-start" alt="Getting started with Python" />
+                <div className="col-md-4 m-md-4 m-0 order-md-2 order-1 ">
+                    <img src={thumbnail} className="img-fluid rounded-start" alt="Getting started with Python" />
                 </div>
             </div>
         </div>
