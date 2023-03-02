@@ -17,9 +17,17 @@
     text-decoration: none;
     padding: 7px 15px;
     border-radius: 5px;
+    border: 0px;
+    width: 100%;
 }
 
 .enrollBtn:hover{
     background-color: #fff880;
     color: #000;
 }
+
+
+.contentDiv{
+    margin:  50px 0;
+}
+

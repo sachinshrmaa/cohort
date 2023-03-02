@@ -59,3 +59,38 @@ p, li, a{
     position: absolute; 
     left: -5000px;
 }
+
+.contentDiv, h4{
+    color: #2c2c2c;
+    margin-bottom: 20px;
+    font-family:'Josefin Sans', sans-serif;
+}
+
+.contentDiv, h5{
+    font-size: 18px;
+    color: #424242;
+    font-family:'Josefin Sans', sans-serif;
+}
+
+.contentDiv, li{
+    font-size: 15px;
+}
+
+.alert-toast{
+    height: auto;
+    background-color:#fff880;
+    padding: 15px;
+    text-align: center;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .subHeading{
+        font-weight: 600;
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+
+}

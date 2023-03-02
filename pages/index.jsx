@@ -9,19 +9,19 @@ import CourseCard from "../components/CourseCard"
 
 
 export async function getStaticProps() {
-  const res = await fetch('http://localhost:3000/api/courses')
-  const courses = await res.json()
+  const res = await fetch('http://localhost:3000/api/classes')
+  const classes = await res.json()
 
   return {
       props: {
-          courses
+          classes
       }
   } 
 }
 
 
 
-const Home = ({courses}) => {
+const Home = ({classes}) => {
   return (  
     <div>
 
@@ -36,7 +36,7 @@ const Home = ({courses}) => {
 
             {/* hero text column */}
             <div className="col-md-6 col-12">
-              <h1 className={styles.heroTitle}>Cohorts</h1>
+              <h1 className={styles.heroTitle}>MasterClass</h1>
               <p>the basics offer a range of micro-courses in the form of 90-minutes live cohorts and resources you can use to put everything into practice.</p>
    
               {/* Mailchimp form for waitlist */}
@@ -69,7 +69,7 @@ const Home = ({courses}) => {
                     
                   </div>
               </form>
-              <p className="text-mute mt-2"><small>by joining you agree the <Link href='/terms' className="text-decoration-none">terms</Link> and <Link href='/privacy' className="text-decoration-none">privacy policy</Link>. </small></p>
+              <p className="text-mute mt-2"><small>by joining you agree the <Link href='/legal/terms' className="text-decoration-none">terms</Link> and <Link href='/legal/privacy' className="text-decoration-none">privacy policy</Link>. </small></p>
 
             </div>
 
@@ -91,28 +91,27 @@ const Home = ({courses}) => {
 
             <div className="col-md-4 mb-3">
 
-              <h2 className={styles.subHeading}>Get Started</h2>
+              <h2 className='subHeading'>Get Started</h2>
               <p>The cohort can be accessed remotely via Google meet.</p>
               <p>To get started, you’ll need: </p>
               <ul>
                 <li>Internet connection 🌐</li>
                 <li>Laptop/phone 💻</li>
-                <li>Valid email 📧</li>
-                <li> less than 300 Rupees 💵 (optional)</li>
-              
+                <li>Valid email 📧</li>              
               </ul>
 
             </div>
 
             <div className="col-md-8">
 
-                {courses.map(course => (
+                {classes.map(course => (
                   <CourseCard 
                       key={course.id}
                       title={course.title}
                       description={course.description}
                       slug={course.slug}
                       price={course.price}
+                      status={course.status}
                       thumbnail={course.thumbnail}
                   />
                 ))}

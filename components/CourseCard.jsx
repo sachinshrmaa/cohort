@@ -3,13 +3,13 @@ import Link from 'next/link'
 import styles from '../styles/CourseCard.module.css'
 
 
-export default function CourseCard({title, description, price, thumbnail, slug}){
+export default function CourseCard({title, description, price, thumbnail, slug, status}){
     return(
         <div className="card mb-5">
             <div className="row g-0">
                 <div className="col-md-7 order-md-1 order-2">
                     <div className="card-body">
-                        <small className={styles.tags}>Upcomming</small>
+                        <small className={styles.tags}>{status?"Enroll Open":"Upcomming"}</small>
                         <h2 className="card-title mt-2">{title}</h2>
                         <p className="card-text">{description}</p>
                         <ul>
