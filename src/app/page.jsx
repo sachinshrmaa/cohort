@@ -3,12 +3,9 @@ import Image from 'next/image'
 import Head from './head';
 import styles from './page.module.css'
 import Link from 'next/link';
-import heroImg from '../public/img/heroImg.png'
 
 async function getData() {
   const res = await fetch('http://localhost:3000/api/classes')
-  // The return value is *not* serialized
-  // You can return Date, Map, Set, etc.
   return res.json();
 }
 
@@ -71,7 +68,7 @@ export default async function Home() {
 
           
           <div className="col-md-6 col">
-            <Image src={heroImg}  className={styles.heroImg} alt="the basics cohort" />
+            <Image src='/img/heroImg.png' width={400} height={350}  className={styles.heroImg} alt="the basics cohort" />
           </div>
 
         </div>

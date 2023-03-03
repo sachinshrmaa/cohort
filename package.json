@@ -8,12 +8,15 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "keywords": ["Sachin Sharma"],
+  "keywords": [
+    "Sachin Sharma"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@next/font": "13.2.3",
     "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.3",
     "eslint": "8.35.0",
     "eslint-config-next": "13.2.3",
     "next": "13.2.3",

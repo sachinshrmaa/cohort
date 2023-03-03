@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from './page.module.css'
+import Script from "next/script";
 
 
 
@@ -15,6 +16,15 @@ export default async function Post({params}) {
     const createMarkup = (cohort) => {
         return <div dangerouslySetInnerHTML={{ __html: cohort.content }} />
     }
+
+
+    const razorpatBtn = '<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_LN5Z9W4StbJJOk" async> </script> </form>'
+
+
+    const paymentButton = (el) => {
+        return <div dangerouslySetInnerHTML={{ __html: el }} />
+    }
+    
     
     
 
@@ -32,10 +42,12 @@ export default async function Post({params}) {
 
                 <div className="col-md-4 order-0 order-md-1 order-lg-1 mb-5">
 
-                    <Image src={cohort.thumbnail} className="img-fluid mb-3" height={200} width={400} alt={cohort.title}/>
+                    <Image src={cohort.thumbnail} height={200} width={400} className="img-fluid mb-3" alt={cohort.title}/>
+                    
 
-                    <button className={styles.enrollBtn}> Enroll Now &rarr; <s> ₹ 1499.00</s> ₹ {cohort.price}.00 </button>
-                    <small className="text-muted"> <i>Excluding 18% GST</i> </small>
+                    {paymentButton(razorpatBtn)}
+                    <small className="text-muted"> <i>Excluding 18% GST</i> </small> 
+                   
                 </div>
             </div>
 

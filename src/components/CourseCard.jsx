@@ -5,6 +5,14 @@ import styles from '../styles/CourseCard.module.css'
 
 
 export default function CourseCard({title, description, price, thumbnail, slug, status}){
+
+    const razorpatBtn = '<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_LN5Z9W4StbJJOk" async> </script> </form>'
+
+    const paymentButton = (el) => {
+        return <div dangerouslySetInnerHTML={{ __html: el }} />
+    }
+    
+
     return(
         <div className="card mb-5">
             <div className="row g-0">
@@ -20,7 +28,10 @@ export default function CourseCard({title, description, price, thumbnail, slug, 
                             <li>Private  community 👥</li>
                             <li>QnA 🙋</li>
                         </ul>
-                        <Link href={slug} className={styles.enrollBtn}>Learn More &rarr; </Link>
+                        <div className='d-flex'>
+                            {paymentButton(razorpatBtn)}
+                            <a href={slug} className="text-decoration-none ms-4 pt-2" >Learn more &rarr; </a>
+                        </div>
                     </div>
                 </div>
 

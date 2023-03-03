@@ -6,7 +6,7 @@ export default function Document() {
   return (
     <Html>
       <Head />
-      <link rel="icon" href="sachinsblog.png" />
+      <link rel="icon" href="/favicon.png" />
         
       <body>
         <Main />
