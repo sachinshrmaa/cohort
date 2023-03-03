@@ -5,14 +5,14 @@ import styles from './page.module.css'
 import Link from 'next/link';
 
 async function getData() {
-  const res = await fetch('http://localhost:3000/api/classes')
+  const res = await fetch('https://thebasics.sachinsblog.in/api/classes')
   return res.json();
 }
 
 
 export default async function Home() {
 
-  const res = await fetch('http://localhost:3000/api/classes')
+  const res = await fetch('https://thebasics.sachinsblog.in/api/classes')
   const cohorts = await getData();
 
   return (
