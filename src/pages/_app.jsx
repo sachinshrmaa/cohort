@@ -1,9 +1,9 @@
+import Navbar from "../components/Navbar"
+import AlertNotification from "../components/AlertNotifaction"
+import Footer from "../components/Footer"
 import 'bootstrap/dist/css/bootstrap.css'
-import '../styles/global.css'
-import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
-import { useEffect } from "react";
-import AlertNotification from '../components/AlertNotifaction';
+import { useEffect } from "react"
+import '../styles/globals.css'
 
 
 const MyApp = ({ Component, pageProps }) => {

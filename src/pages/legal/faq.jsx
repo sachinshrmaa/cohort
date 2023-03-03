@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 
 const Faq = () => {
@@ -10,7 +11,7 @@ const Faq = () => {
   
       </Head>
                 <h2 className='subHeading'>Frequently asked Questions</h2>
-                <p>If you still have some questions, please feel free to <a href='/contact' className='text-decoration-none'>contact us</a> and we will gladly provide you with more detailed information about our process.</p>
+                <p>If you still have some questions, please feel free to <Link href='/contact' className='text-decoration-none'>contact us</Link> and we will gladly provide you with more detailed information about our process.</p>
     
                 <div className="accordion accordion-flush mt-4" id="accordionFlushExample">
                     <div className="accordion-item">

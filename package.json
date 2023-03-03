@@ -1,27 +1,24 @@
 {
   "name": "the-basics",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
-  "keywords": [],
+  "keywords": ["Sachin Sharma"],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@emotion/react": "^11.10.5",
-    "@emotion/styled": "^11.10.5",
-    "@mui/material": "^5.11.4",
+    "@next/font": "13.2.3",
     "bootstrap": "^5.2.3",
-    "next": "^13.1.1",
-    "razorpay": "^2.8.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "shortid": "^2.2.16"
+    "eslint": "8.35.0",
+    "eslint-config-next": "13.2.3",
+    "next": "13.2.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
     "eslint": "8.32.0",

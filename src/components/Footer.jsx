@@ -14,10 +14,10 @@ const Footer = () => {
                 </div>
 
                 <div className="col-md-8 col-12 d-flex justify-content-md-end  justify-content-center">
-                    <Link href='/terms' className="ms-md-2 text-decoration-none">Terms</Link> ・
-                    <Link href='/privacy' className="ms-2 text-decoration-none">Privacy</Link> ・
-                    <Link href='/faq' className="ms-2 text-decoration-none">FAQ</Link> ・
-                    <Link href='/refund' className="ms-2 text-decoration-none">Cancellation</Link>                    
+                    <Link href='/legal/terms' className="ms-md-2 text-decoration-none">Terms</Link> ・
+                    <Link href='/legal/privacy' className="ms-2 text-decoration-none">Privacy</Link> ・
+                    <Link href='/legal/faq' className="ms-2 text-decoration-none">FAQ</Link> ・
+                    <Link href='/legal/refund' className="ms-2 text-decoration-none">Cancellation</Link>                    
                 </div>
             </div>
 

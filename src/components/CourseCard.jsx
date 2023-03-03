@@ -1,4 +1,5 @@
 
+import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/CourseCard.module.css'
 
@@ -24,7 +25,7 @@ export default function CourseCard({title, description, price, thumbnail, slug, 
                 </div>
 
                 <div className="col-md-4 m-md-4 m-0 order-md-2 order-1 ">
-                    <img src={thumbnail} className="img-fluid rounded-start" alt="Getting started with Python" />
+                    <Image src={thumbnail} width={300} height={200} className="img-fluid rounded-start" alt={title} />
                 </div>
             </div>
         </div>
