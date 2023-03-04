@@ -4,6 +4,7 @@ import Head from './head';
 import styles from './page.module.css'
 import Link from 'next/link';
 import Script from 'next/script';
+import FooterActionCard from '../components/FooterActionCard';
 
 async function getData() {
   const res = await fetch('http://localhost:3000/api/classes')
@@ -124,7 +125,7 @@ export default async function Home() {
 
         
        
-       <div className='my-5 py-4'>
+       <div className={styles.TestimonialSection}>
           <div className="col-11 m-auto">
             <h2 className="subHeading mb-1 text-center">Wall of Love...</h2>
             <p className='mb-5 mt-1 text-center'>What other people has to say about <b>the basics class</b> ...</p>
@@ -163,6 +164,9 @@ export default async function Home() {
 
           </div>
        </div>
+
+
+       <FooterActionCard />
 
 
     </div>
