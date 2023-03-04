@@ -9,7 +9,7 @@ export default async function Post({params}) {
 
     const {slug} = params
 
-    const res = await fetch('https://thebasics.sachinsblog.in/api/classes')
+    const res = await fetch('http://localhost:3000/api/classes')
     const classes = await res.json()
     const cohort = classes.find(cohort => cohort.slug === slug)
 

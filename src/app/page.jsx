@@ -3,16 +3,23 @@ import Image from 'next/image'
 import Head from './head';
 import styles from './page.module.css'
 import Link from 'next/link';
+import Script from 'next/script';
 
 async function getData() {
-  const res = await fetch('https://thebasics.sachinsblog.in/api/classes')
+  const res = await fetch('http://localhost:3000/api/classes')
   return res.json();
 }
 
 
 export default async function Home() {
 
-  const res = await fetch('https://thebasics.sachinsblog.in/api/classes')
+  const twitterSrc = '<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>'
+
+  const twitterMarkup = (el) => {
+    return <div dangerouslySetInnerHTML={{ __html: el }} />
+  }
+
+  const res = await fetch('http://localhost:3000/api/classes')
   const cohorts = await getData();
 
   return (
@@ -114,6 +121,49 @@ export default async function Home() {
           </div>
 
         </div>
+
+        
+       
+       <div className='my-5 py-4'>
+          <div className="col-11 m-auto">
+            <h2 className="subHeading mb-1 text-center">Wall of Love...</h2>
+            <p className='mb-5 mt-1 text-center'>What other people has to say about <b>the basics class</b> ...</p>
+            
+            <div className='row'>
+
+              <div className="col-md-3">
+                <blockquote class="twitter-tweet">
+                  <p lang="en" dir="ltr">This guy has the aura of teaching any individual with making the topic interesting itself just like teaching JavaScript to a newbie... <a href="https://twitter.com/SachinShrmaa?ref_src=twsrc%5Etfw">@SachinShrmaa</a> ...keep it up brother🤘🤘🤘</p>&mdash; Saheb Kumar Singh (@imbatmanB2) <a href="https://twitter.com/imbatmanB2/status/1631253871527096321?ref_src=twsrc%5Etfw">March 2, 2023</a>
+                </blockquote>         
+              </div>
+
+              <div className="col-md-3">
+                <blockquote class="twitter-tweet">
+                  <p lang="en" dir="ltr">This guy has the aura of teaching any individual with making the topic interesting itself just like teaching JavaScript to a newbie... <a href="https://twitter.com/SachinShrmaa?ref_src=twsrc%5Etfw">@SachinShrmaa</a> ...keep it up brother🤘🤘🤘</p>&mdash; Saheb Kumar Singh (@imbatmanB2) <a href="https://twitter.com/imbatmanB2/status/1631253871527096321?ref_src=twsrc%5Etfw">March 2, 2023</a>
+                </blockquote>         
+              </div>
+
+              <div className="col-md-3">
+                <blockquote class="twitter-tweet">
+                  <p lang="en" dir="ltr">This guy has the aura of teaching any individual with making the topic interesting itself just like teaching JavaScript to a newbie... <a href="https://twitter.com/SachinShrmaa?ref_src=twsrc%5Etfw">@SachinShrmaa</a> ...keep it up brother🤘🤘🤘</p>&mdash; Saheb Kumar Singh (@imbatmanB2) <a href="https://twitter.com/imbatmanB2/status/1631253871527096321?ref_src=twsrc%5Etfw">March 2, 2023</a>
+                </blockquote>         
+              </div>
+             
+              <div className="col-md-3">
+                <blockquote class="twitter-tweet">
+                  <p lang="en" dir="ltr">This guy has the aura of teaching any individual with making the topic interesting itself just like teaching JavaScript to a newbie... <a href="https://twitter.com/SachinShrmaa?ref_src=twsrc%5Etfw">@SachinShrmaa</a> ...keep it up brother🤘🤘🤘</p>&mdash; Saheb Kumar Singh (@imbatmanB2) <a href="https://twitter.com/imbatmanB2/status/1631253871527096321?ref_src=twsrc%5Etfw">March 2, 2023</a>
+                </blockquote>         
+              </div>
+
+
+            </div>
+
+            <Script async src="https://platform.twitter.com/widgets.js" charset="utf-8" />
+
+
+          </div>
+       </div>
+
 
     </div>
 
