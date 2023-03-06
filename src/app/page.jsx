@@ -7,7 +7,7 @@ import Script from 'next/script';
 import FooterActionCard from '../components/FooterActionCard';
 
 async function getData() {
-  const res = await fetch('http://localhost:3000/api/classes')
+  const res = await fetch('https://thebasics.sachinsblog.in/api/classes')
   return res.json();
 }
 
@@ -20,7 +20,7 @@ export default async function Home() {
     return <div dangerouslySetInnerHTML={{ __html: el }} />
   }
 
-  const res = await fetch('http://localhost:3000/api/classes')
+  const res = await fetch('https://thebasics.sachinsblog.in/api/classes')
   const cohorts = await getData();
 
   return (
