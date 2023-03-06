@@ -37,8 +37,8 @@ export default async function Home() {
 
           {/* hero text column */}
           <div className="col-md-6 col-12">
-            <h1 className={styles.heroTitle}>MasterClass</h1>
-            <p>the basics offer a range of micro-courses in the form of 90-minutes live cohorts and resources you can use to put everything into practice.</p>
+            <h1 className={styles.heroTitle}>the basics class</h1>
+            <p>the basics class offers a range of 90-minute live cohorts and practical resources to learn the fundamentals. Join our newsletter for updates and exclusive content to support your learning journey.</p>
  
             {/* Mailchimp form for waitlist */}
             <form action="https://sachinshrmaa.us10.list-manage.com/subscribe/post?u=e94ac720736227167db541b5c&amp;id=5f3f8db4af&amp;f_id=0098c6e5f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="mt-md-5 mt-4 validate" target="_self">
@@ -98,7 +98,7 @@ export default async function Home() {
             <ul>
               <li>Internet connection 🌐</li>
               <li>Laptop/phone 💻</li>
-              <li>Valid email 📧</li>              
+              <li>Valid email 📧</li>             
             </ul>
 
           </div>
@@ -123,50 +123,8 @@ export default async function Home() {
 
         </div>
 
-        
-       
-       <div className={styles.TestimonialSection}>
-          <div className="col-11 m-auto">
-            <h2 className="subHeading mb-1 text-center">Wall of Love...</h2>
-            <p className='mb-5 mt-1 text-center'>What other people has to say about <b>the basics class</b> ...</p>
-            
-            <div className='row'>
 
-              <div className="col-md-3">
-                <blockquote class="twitter-tweet">
-                  <p lang="en" dir="ltr">This guy has the aura of teaching any individual with making the topic interesting itself just like teaching JavaScript to a newbie... <a href="https://twitter.com/SachinShrmaa?ref_src=twsrc%5Etfw">@SachinShrmaa</a> ...keep it up brother🤘🤘🤘</p>&mdash; Saheb Kumar Singh (@imbatmanB2) <a href="https://twitter.com/imbatmanB2/status/1631253871527096321?ref_src=twsrc%5Etfw">March 2, 2023</a>
-                </blockquote>         
-              </div>
-
-              <div className="col-md-3">
-                <blockquote class="twitter-tweet">
-                  <p lang="en" dir="ltr">This guy has the aura of teaching any individual with making the topic interesting itself just like teaching JavaScript to a newbie... <a href="https://twitter.com/SachinShrmaa?ref_src=twsrc%5Etfw">@SachinShrmaa</a> ...keep it up brother🤘🤘🤘</p>&mdash; Saheb Kumar Singh (@imbatmanB2) <a href="https://twitter.com/imbatmanB2/status/1631253871527096321?ref_src=twsrc%5Etfw">March 2, 2023</a>
-                </blockquote>         
-              </div>
-
-              <div className="col-md-3">
-                <blockquote class="twitter-tweet">
-                  <p lang="en" dir="ltr">This guy has the aura of teaching any individual with making the topic interesting itself just like teaching JavaScript to a newbie... <a href="https://twitter.com/SachinShrmaa?ref_src=twsrc%5Etfw">@SachinShrmaa</a> ...keep it up brother🤘🤘🤘</p>&mdash; Saheb Kumar Singh (@imbatmanB2) <a href="https://twitter.com/imbatmanB2/status/1631253871527096321?ref_src=twsrc%5Etfw">March 2, 2023</a>
-                </blockquote>         
-              </div>
-             
-              <div className="col-md-3">
-                <blockquote class="twitter-tweet">
-                  <p lang="en" dir="ltr">This guy has the aura of teaching any individual with making the topic interesting itself just like teaching JavaScript to a newbie... <a href="https://twitter.com/SachinShrmaa?ref_src=twsrc%5Etfw">@SachinShrmaa</a> ...keep it up brother🤘🤘🤘</p>&mdash; Saheb Kumar Singh (@imbatmanB2) <a href="https://twitter.com/imbatmanB2/status/1631253871527096321?ref_src=twsrc%5Etfw">March 2, 2023</a>
-                </blockquote>         
-              </div>
-
-
-            </div>
-
-            <Script async src="https://platform.twitter.com/widgets.js" charset="utf-8" />
-
-
-          </div>
-       </div>
-
-
-       <FooterActionCard />
+       <FooterActionCard/>
 
 
     </div>

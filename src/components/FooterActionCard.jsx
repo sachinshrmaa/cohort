@@ -5,8 +5,8 @@ const FooterActionCard = () => {
     return (  
         <div className={styles.footerActionCard}>
             <h1 className={styles.footerCardTitle}>Ready for the move?</h1>
-            <p className={styles.footerCardPara}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore veritatis doloribus sapiente.</p>
-            <a href="/frontend-web-development" className={styles.footerCardBtn}>Enroll Now</a>  
+            <p className={styles.footerCardPara}>Join our masterclass today and gain hands-on experience in frontend web development with ReactJS.</p>
+            <a href="/reactjs-masterclass" className={styles.footerCardBtn}>Enroll Now</a>  
         </div>
     );
 }

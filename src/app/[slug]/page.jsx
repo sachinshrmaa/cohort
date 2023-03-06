@@ -51,6 +51,28 @@ export default async function Post({params}) {
                 </div>
             </div>
 
+             
+            <div className={styles.TestimonialSection}>
+                <div className="col-11 m-auto">
+                    <h2 className="subHeading mb-1 text-center">Wall of Love...</h2>
+                    <p className='mb-5 mt-1 text-center'>What other people has to say about <b>the basics class</b> ...</p>
+                    
+                    <div className='row'>
+
+                    <div className="col-md-3">
+                        <blockquote class="twitter-tweet">
+                        <p lang="en" dir="ltr">This guy has the aura of teaching any individual with making the topic interesting itself just like teaching JavaScript to a newbie... <a href="https://twitter.com/SachinShrmaa?ref_src=twsrc%5Etfw">@SachinShrmaa</a> ...keep it up brother🤘🤘🤘</p>&mdash; Saheb Kumar Singh (@imbatmanB2) <a href="https://twitter.com/imbatmanB2/status/1631253871527096321?ref_src=twsrc%5Etfw">March 2, 2023</a>
+                        </blockquote>         
+                    </div>
+
+                    </div>
+
+                    <Script async src="https://platform.twitter.com/widgets.js" charset="utf-8" />
+
+                </div>
+            </div>
+
+
         </div>
     );
 }

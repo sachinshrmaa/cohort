@@ -21,6 +21,7 @@ const Contact = () => {
                 <li>Twitter: twitter.com/sachinshrmaa</li>
                 <li>Instagram: instagram.com/sachinshrmaa</li>
                 <li>Facebook: facebook.com/sachinshrmaa</li>
+                <li>LinkedIn: linkedin.com/company/thebasicsclass/</li>
             </ul>
             <p>We strive to respond to all inquiries within one business day.</p>
             <p>Thank you for choosing. We look forward to serving you!</p>
