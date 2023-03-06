@@ -21,8 +21,8 @@ const Footer = () => {
 
                     <div className="row">
                         <div className="d-flex justify-content-md-end  justify-content-center mb-3">       
-                            <a href='https://github.com/sachinshrmaa' target='_blank'  className="ms-4 text-decoration-none  "><i className="bi bi-github"></i> </a> <br />
-                            <a href='https://www.linkedin.com/company/thebasicsclass/' target='_blank'  className="ms-4 text-decoration-none  "><i className="bi bi-linkedin"></i> </a> <br />
+                            <a href='https://github.com/sachinshrmaa' target='_blank' rel="noreferrer" className="ms-4 text-decoration-none  "><i className="bi bi-github"></i> </a> <br />
+                            <a href='https://www.linkedin.com/company/thebasicsclass/' target='_blank' rel="noreferrer" className="ms-4 text-decoration-none  "><i className="bi bi-linkedin"></i> </a> <br />
                         </div>
                         
                         <div className="d-flex justify-content-md-end  justify-content-center ">
