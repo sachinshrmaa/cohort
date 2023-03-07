@@ -1,27 +1,14 @@
-import CourseCard from '../components/CourseCard';
 import Image from 'next/image'
-import Head from './head';
-import styles from './page.module.css'
 import Link from 'next/link';
-import Script from 'next/script';
+import Head from "next/head";
+
+import styles from '../styles/Home.module.css'
 import FooterActionCard from '../components/FooterActionCard';
-
-async function getData() {
-  const res = await fetch('https://thebasics.sachinsblog.in/api/classes')
-  return res.json();
-}
+import CourseCard from '../components/CourseCard';
 
 
-export default async function Home() {
 
-  const twitterSrc = '<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>'
-
-  const twitterMarkup = (el) => {
-    return <div dangerouslySetInnerHTML={{ __html: el }} />
-  }
-
-  const res = await fetch('https://thebasics.sachinsblog.in/api/classes')
-  const cohorts = await getData();
+export default function Home() {
 
   return (
     <div>
@@ -35,7 +22,7 @@ export default async function Home() {
       <div className="col-md-10 col-11 m-auto">
         <div className="row align-items-center">
 
-          {/* hero text column */}
+          
           <div className="col-md-6 col-12">
             <h1 className={styles.heroTitle}>the basics class</h1>
             <p>the basics class offers a range of 90-minute live cohorts and practical resources to learn the fundamentals. Join our newsletter for updates and exclusive content to support your learning journey.</p>
@@ -87,45 +74,27 @@ export default async function Home() {
 
     <div className={styles.mainSection}>
 
-      <div className="col-md-10 col-11 m-auto">
-        <div className="row">
+        <div className="col-md-10 col-11 m-auto">
+            <div className="row">
+                <div className="col-md-4 mb-3">
 
-          <div className="col-md-4 mb-3">
+                    <h2 className='subHeading'>Get Started</h2>
+                    <p>The cohort can be accessed remotely via Google meet.</p>
+                    <p>To get started, you’ll need: </p>
+                    <ul>
+                    <li>Internet connection 🌐</li>
+                    <li>Laptop/phone 💻</li>
+                    <li>Valid email 📧</li>             
+                    </ul>
 
-            <h2 className='subHeading'>Get Started</h2>
-            <p>The cohort can be accessed remotely via Google meet.</p>
-            <p>To get started, you’ll need: </p>
-            <ul>
-              <li>Internet connection 🌐</li>
-              <li>Laptop/phone 💻</li>
-              <li>Valid email 📧</li>             
-            </ul>
-
-          </div>
-
-          <div className="col-md-8">
-
-            {cohorts.map(cohort => (
-              <CourseCard
-                  key={cohort.id}
-                  title={cohort.title}
-                  description={cohort.description}
-                  slug={cohort.slug}
-                  price={cohort.price}
-                  status={cohort.status}
-                  thumbnail={cohort.thumbnail}
-              />
-            ))}
-
-          </div>
-
-          </div>
-
+                </div>
+                <div className="col-md-8">
+                    <CourseCard />
+                </div>
+            </div>
         </div>
 
-
        <FooterActionCard/>
-
 
     </div>
 
