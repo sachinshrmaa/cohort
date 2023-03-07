@@ -3,16 +3,24 @@ import Image from 'next/image'
 import Head from './head';
 import styles from './page.module.css'
 import Link from 'next/link';
+import Script from 'next/script';
+import FooterActionCard from '../components/FooterActionCard';
 
 async function getData() {
-  const res = await fetch('http://localhost:3000/api/classes')
+  const res = await fetch('https://thebasics.sachinsblog.in/api/classes')
   return res.json();
 }
 
 
 export default async function Home() {
 
-  const res = await fetch('http://localhost:3000/api/classes')
+  const twitterSrc = '<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>'
+
+  const twitterMarkup = (el) => {
+    return <div dangerouslySetInnerHTML={{ __html: el }} />
+  }
+
+  const res = await fetch('https://thebasics.sachinsblog.in/api/classes')
   const cohorts = await getData();
 
   return (
@@ -29,8 +37,8 @@ export default async function Home() {
 
           {/* hero text column */}
           <div className="col-md-6 col-12">
-            <h1 className={styles.heroTitle}>MasterClass</h1>
-            <p>the basics offer a range of micro-courses in the form of 90-minutes live cohorts and resources you can use to put everything into practice.</p>
+            <h1 className={styles.heroTitle}>the basics class</h1>
+            <p>the basics class offers a range of 90-minute live cohorts and practical resources to learn the fundamentals. Join our newsletter for updates and exclusive content to support your learning journey.</p>
  
             {/* Mailchimp form for waitlist */}
             <form action="https://sachinshrmaa.us10.list-manage.com/subscribe/post?u=e94ac720736227167db541b5c&amp;id=5f3f8db4af&amp;f_id=0098c6e5f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="mt-md-5 mt-4 validate" target="_self">
@@ -90,7 +98,7 @@ export default async function Home() {
             <ul>
               <li>Internet connection 🌐</li>
               <li>Laptop/phone 💻</li>
-              <li>Valid email 📧</li>              
+              <li>Valid email 📧</li>             
             </ul>
 
           </div>
@@ -114,6 +122,10 @@ export default async function Home() {
           </div>
 
         </div>
+
+
+       <FooterActionCard/>
+
 
     </div>
 

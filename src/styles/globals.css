@@ -77,6 +77,10 @@ p, li, a{
 }
 
 
+.bi-linkedin, .bi-github{
+    font-size: 27px;
+}
+
 
 
 
@@ -86,6 +90,16 @@ p, li, a{
         font-weight: 600;
         font-size: 25px;
         margin-bottom: 25px;
+    }
+
+    .card-title{
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    
+    .card-text{
+        font-size: 16px;
     }
 
 }

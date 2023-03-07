@@ -1,0 +1,68 @@
+
+
+
+.footerActionCard{
+    background-color: #1f2d89;
+    color: #fff;
+    padding: 100px 0;
+    width: 75%;
+    margin: auto;
+    border-radius: 8px;
+    border: 0px;
+    text-align: center;
+}
+
+.footerCardTitle{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.footerCardPara{
+    margin-bottom: 50px;
+}
+
+.footerCardBtn{
+    padding: 14px 50px;
+    border: 0px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #fff880;
+    color: #000;
+    font-weight: 600;
+}
+
+.footerCardBtn:hover{
+    background-color: #fffbb4;
+    color: #000;
+}
+
+
+.footerActionCard:hover{
+    box-shadow: 0px 3px 15px 10px #d8d8d8;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .footerActionCard{
+        width: 90%;
+        padding: 70px 20px;
+    }
+
+    .footerCardTitle{
+        font-size: 35px;
+    }
+
+    .footerCardPara{
+        font-size: 15px;
+    }
+
+    .footerCardBtn{
+        padding: 10px 50px;
+        font-size: 15px;
+    }
+
+}
