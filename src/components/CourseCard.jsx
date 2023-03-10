@@ -2,16 +2,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/CourseCard.module.css'
+import PaymentBtn from './PaymentBtn'
+
+
 
 export default function CourseCard(){
-
-    const razorpatBtn = '<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_LN5Z9W4StbJJOk" async> </script> </form>'
-
-    const paymentButton = (el) => {
-        return <div dangerouslySetInnerHTML={{ __html: el }} />
-    }
     
-
     return(
         <div className="card mb-5">
             <div className="row g-0">
@@ -28,7 +24,7 @@ export default function CourseCard(){
                             <li>QnA 🙋</li>
                         </ul>
                         <div className='d-flex'>
-                            {paymentButton(razorpatBtn)}
+                            <PaymentBtn />
                             <Link href='/reactjs-masterclass' className="text-decoration-none ms-4 pt-2" >Learn more &rarr; </Link>
                         </div>
                     </div>

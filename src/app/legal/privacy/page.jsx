@@ -1,14 +1,14 @@
-import Head from "next/head";
+
+export const metadata = {
+    title: 'privacy',
+    description: 'the basics class offers a range of 90-minute live cohorts and practical resources to learn the fundamentals. ',
+}
 
 
 const Privacy = () => {
     return (  
         <div className="col-md-6 col-12 m-auto pageLayout">
-            <Head>
-        <title>Privacy - the basics</title>
-        <meta name="description" content="A series of live cohort which intents to teach you the basics from scratch." />
-  
-      </Head>
+       
             <h2 className="subHeading">Privacy Policy</h2>
 
             <p>At <b>the basics</b>, we are committed to protecting the privacy of our users. This Privacy Policy explains how we collect, use, and share information about you when you use our website and online courses.</p>

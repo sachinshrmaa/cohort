@@ -26,7 +26,7 @@ const Footer = () => {
                         </div>
                         
                         <div className="d-flex justify-content-md-end  justify-content-center ">
-                            <Link href='/support/contact' className="ms-md-2 text-decoration-none  ">Contact</Link> ・
+                            <Link href='/newsletter' className="ms-md-2 text-decoration-none  ">Newsletter</Link> ・
                             <Link href='/legal/faq' className="ms-md-2 text-decoration-none  ">FAQ</Link> ・
                             <Link href='/legal/refund' className="ms-md-2 text-decoration-none  ">Refund</Link> ・
                             <Link href='/legal/terms' className="ms-md-2 text-decoration-none  ">Terms</Link> ・

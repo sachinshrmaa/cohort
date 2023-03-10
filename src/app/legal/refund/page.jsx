@@ -1,14 +1,13 @@
-import Head from "next/head";
 
+export const metadata = {
+    title: 'refund',
+    description: 'the basics class offers a range of 90-minute live cohorts and practical resources to learn the fundamentals. ',
+}
 
 const Refund = () => {
     return (  
         <div className="col-md-6 col-12 m-auto pageLayout">
-            <Head>
-        <title>Refund - the basics</title>
-        <meta name="description" content="A series of live cohort which intents to teach you the basics from scratch." />
-  
-      </Head>
+     
 
             <h2 className="subHeading">Refund and Cancellation</h2>
 

@@ -1,15 +1,15 @@
-import Head from "next/head";
+
 import Link from "next/link";
 
+export const metadata = {
+    title: 'faq',
+    description: 'the basics class offers a range of 90-minute live cohorts and practical resources to learn the fundamentals. ',
+}
 
 const Faq = () => {
     return ( 
             <div className="col-md-6 col-12 m-auto pageLayout">
-              <Head>
-        <title>FAQ - the basics</title>
-        <meta name="description" content="A series of live cohort which intents to teach you the basics from scratch." />
-  
-      </Head>
+   
                 <h2 className='subHeading'>Frequently asked Questions</h2>
                 <p>If you still have some questions, please feel free to <Link href='/contact' className='text-decoration-none'>contact us</Link> and we will gladly provide you with more detailed information about our process.</p>
     

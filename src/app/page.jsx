@@ -1,24 +1,17 @@
-import Image from 'next/image'
-import Link from 'next/link';
-import Head from "next/head";
+import Link from "next/link"
+import Image from "next/image"
 
-import styles from '../styles/Home.module.css'
-import FooterActionCard from '../components/FooterActionCard';
-import CourseCard from '../components/CourseCard';
+import CourseCard from "../components/CourseCard"
+
+import styles from "./page.module.css"
+import FooterActionCard from "../components/FooterActionCard"
 
 
 
-export default function Home() {
-
+export default function Home() {  
   return (
-    <div>
-
-    <Head>
-      <title>the basics</title>
-      <meta name="description" content="A series of live cohort which intents to teach you the basics from scratch." />
-    </Head>
-
-    <div className={styles.heroSection}>
+      <div>
+        <div className={styles.heroSection}>
       <div className="col-md-10 col-11 m-auto">
         <div className="row align-items-center">
 
@@ -94,10 +87,14 @@ export default function Home() {
             </div>
         </div>
 
-       <FooterActionCard/>
+
+        <FooterActionCard />
+       
 
     </div>
 
-  </div>
+     
+
+      </div>
   )
 }

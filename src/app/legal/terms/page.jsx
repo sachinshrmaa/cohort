@@ -1,14 +1,13 @@
-import Head from "next/head";
+
+export const metadata = {
+  title: 'terms',
+  description: 'the basics class offers a range of 90-minute live cohorts and practical resources to learn the fundamentals. ',
+}
 
 const Terms = () => {
     return (  
         <div className="col-md-6 col-12 m-auto pageLayout">
-            <Head>
-        <title>Terms - the basics </title>
-        <meta name="description" content="A series of live cohort which intents to teach you the basics from scratch." />
-  
-      </Head>
-
+       
             <h2 className="subHeading">Terms and Conditions</h2>
             <p>By using our website and enrolling in our online courses, you agree to the following terms and conditions:</p>
 
