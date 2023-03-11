@@ -16,7 +16,23 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">  
+    <html lang="en"> 
+     {/* Google Analytics Script */}
+      <Script 
+        src="https://www.googletagmanager.com/gtag/js?id=G-M0S1K1Z1DT"
+        strategy="afterInteractive"
+      />
+      
+      <Script id="google-analytics" strategy="afterInteractive" />
+        {`
+        window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+  
+          gtag('config', 'G-M0S1K1Z1DT');
+        `}
+      <Script />
+
      <body>
         <AlertNotification />
         <Navbar />
