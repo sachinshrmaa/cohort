@@ -10,9 +10,10 @@ import Script from 'next/script'
 
 
 export const metadata = {
-  title: 'the basics class',
-  description: 'the basics class offers a range of 90-minute live cohorts and practical resources to learn the fundamentals. ',
+  title: 'The Basics Class',
+  description: 'The basics class offers a range of 90-minute live cohorts and practical resources to learn the fundamentals. ',
 }
+
 
 export default function RootLayout({ children }) {
   return (
@@ -31,6 +32,8 @@ export default function RootLayout({ children }) {
           gtag('config', 'G-M0S1K1Z1DT');
         `}
       </Script>
+
+      <link rel="icon" type="image/x-icon" href="/favicon.png"/>
 
      <body>
         {/* <AlertNotification /> */}

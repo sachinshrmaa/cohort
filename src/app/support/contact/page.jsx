@@ -2,8 +2,8 @@
 
 
 export const metadata = {
-    title: 'contact',
-    description: 'the basics class offers a range of 90-minute live cohorts and practical resources to learn the fundamentals. ',
+    title: 'Contact',
+    description: 'If you have any questions or comments, we would love to hear from you. We strive to respond to all inquiries within one business day.',
 }
 
 const Contact = () => {

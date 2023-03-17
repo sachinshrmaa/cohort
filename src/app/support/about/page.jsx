@@ -1,7 +1,7 @@
 
 export const metadata = {
-    title: 'about',
-    description: 'the basics class offers a range of 90-minute live cohorts and practical resources to learn the fundamentals. ',
+    title: 'About',
+    description: 'We believe that learning should be engaging and interactive, which is why our classes are designed to be hands-on and immersive.',
 }
 
 const About = () => {

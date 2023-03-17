@@ -7,8 +7,8 @@ import styles from './page.module.css'
 import PaymentBtn from "../../components/PaymentBtn"
 
 export const metadata = {
-    title: 'ReactJS for Beginners: A Hands-On Introduction to Frontend Development',
-    description: 'the basics class offers a range of 90-minute live cohorts and practical resources to learn the fundamentals. ',
+    title: 'ReactJS for Beginners',
+    description: 'Looking to dive into frontend development with ReactJS? Check out this live class, "ReactJS for Beginners: A Hands-On Introduction to Frontend Development"',
 }
 
 export default function Cohort() {

@@ -1,7 +1,7 @@
 
 export const metadata = {
-  title: 'terms',
-  description: 'the basics class offers a range of 90-minute live cohorts and practical resources to learn the fundamentals. ',
+  title: 'Terms and Conditions',
+  description: 'By using our website and enrolling in our online courses, you acknowledge that you have read and understand these terms and conditions and agree to be bound by them.',
 }
 
 const Terms = () => {

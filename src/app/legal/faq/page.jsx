@@ -2,8 +2,8 @@
 import Link from "next/link";
 
 export const metadata = {
-    title: 'faq',
-    description: 'the basics class offers a range of 90-minute live cohorts and practical resources to learn the fundamentals. ',
+    title: 'FAQ',
+    description: "Got questions? We've got answers. Find solutions to your problems and get the information you need to make the most of our class.",
 }
 
 const Faq = () => {

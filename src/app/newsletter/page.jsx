@@ -7,7 +7,7 @@ import styles from "./page.module.css"
 
 export const metadata = {
     title: 'Newsletter',
-    description: 'the basics class offers a range of 90-minute live cohorts and practical resources to learn the fundamentals. ',
+    description: 'Join the basics newsletter to stay up-to-date on tech and careers updates and exclusive content to support your learning journey.',
 }
 
 

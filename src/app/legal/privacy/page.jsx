@@ -1,7 +1,7 @@
 
 export const metadata = {
-    title: 'privacy',
-    description: 'the basics class offers a range of 90-minute live cohorts and practical resources to learn the fundamentals. ',
+    title: 'Privacy Policy',
+    description: 'By using our website and enrolling in our online courses, you acknowledge that you have read and understand this Privacy Policy and agree to the collection, use, and sharing of your personal information as described.',
 }
 
 

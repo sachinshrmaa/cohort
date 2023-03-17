@@ -6,6 +6,10 @@ import CourseCard from "../components/CourseCard"
 import styles from "./page.module.css"
 import FooterActionCard from "../components/FooterActionCard"
 
+export const metadata = {
+  title: 'The Basics Class',
+  description: 'The basics class offers a range of 90-minute live cohorts and practical resources to learn the fundamentals. ',
+}
 
 
 export default function Home() {  
@@ -15,7 +19,7 @@ export default function Home() {
           <div className="col-md-10 col-11 m-auto">
               <div className="row align-items-center"> 
                 <div className="col-md-6 col-12 mt-md-5">
-                  <h1 className={styles.heroTitle}>the basics class</h1>
+                  <h1 className={styles.heroTitle}>Learn. Build. Repeat.</h1>
                   <p>the basics class offers a range of 90-minute live cohorts and practical resources to learn the fundamentals. Join our newsletter for updates and exclusive content to support your learning journey.</p>
       
                   {/* Mailchimp form */}

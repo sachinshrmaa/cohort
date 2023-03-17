@@ -1,7 +1,7 @@
 
 export const metadata = {
-    title: 'refund',
-    description: 'the basics class offers a range of 90-minute live cohorts and practical resources to learn the fundamentals. ',
+    title: 'Refund',
+    description: 'We do not offer refunds for our online classes. By enrolling in one of our online courses, you acknowledge and agree to this No Refund Policy.',
 }
 
 const Refund = () => {
