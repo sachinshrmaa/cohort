@@ -2,7 +2,7 @@
 
 
 .footerActionCard{
-    background-color: #1f2d89;
+    background-color: #3d4a9f;
     color: #fff;
     padding: 100px 0;
     width: 75%;
@@ -27,13 +27,12 @@
     border: 0px;
     border-radius: 5px;
     text-decoration: none;
-    background-color: #fff880;
+    background-color: #F0A04B;
     color: #000;
-    font-weight: 600;
 }
 
 .footerCardBtn:hover{
-    background-color: #fffbb4;
+    background-color: #f5b26a;
     color: #000;
 }
 

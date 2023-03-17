@@ -2,9 +2,10 @@
 
 .alertToast{
     height: auto;
-    background-color:#fff880;
+    background-color:#F0A04B;
     padding: 15px;
     text-align: center;
+    color: #fff;
 }
 
 

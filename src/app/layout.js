@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
       </Script>
 
      <body>
-        <AlertNotification />
+        {/* <AlertNotification /> */}
         <Navbar />
         {children}
         <Footer />

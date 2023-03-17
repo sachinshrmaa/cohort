@@ -4,6 +4,7 @@
 body {
     -webkit-text-size-adjust: 100%;
     margin: 0;
+    background-color: #FEFBF6;
 }
 
 th {
@@ -23,9 +24,22 @@ th {
     color: #1f2d89;
 }
 
+.nav-btn{
+    background-color: #F0A04B;;
+    color: #000;
+}
+
+.nav-btn:hover{
+    background-color: #f5b26a;
+    color: #000;   
+}
 
 p, li, a{
     font-family: 'Public Sans', sans-serif;
+}
+
+a{
+    color: #1f2d89;
 }
 
 
@@ -79,10 +93,22 @@ p, li, a{
 }
 
 
-.bi-linkedin, .bi-github{
+.bi-linkedin, .bi-github, .bi-facebook, .bi-twitter{
     font-size: 27px;
 }
 
+
+.accordion-button{
+    background: #FEFBF6;
+}
+
+.accordion-button:not(.collapsed){
+    background: #FEFBF6;
+}
+
+.accordion-item{
+    background-color: #fafafa;
+}
 
 
 

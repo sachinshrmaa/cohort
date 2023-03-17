@@ -1,9 +1,10 @@
 
 
 .heroSection{
-    background-color: #1f2d89;
     height: 500px;
-    color: #fafafa;
+    color: #000;
+    background: rgb(6,0,107);
+    background: linear-gradient(270deg, rgba(6,0,107,1) 0%, rgba(144,167,255,1) 55%, rgba(239,243,255,1) 88%);
 }
 
 
@@ -28,19 +29,23 @@
     margin-right: 10px;
 }
 
+.emailInp:focus{
+    outline: none;
+}
+
 .emailSubmit{
     height: 40px;
     border-radius: 5px;
     border: 0px;
-    background-color: #fafafa;
-    color: #1f2d89;
+    background-color: #F0A04B;;
+    color: #000;
     font-weight: 600;
     text-transform: capitalize;
     padding: 0 20px;
 }
 
 .emailSubmit:hover{
-    background-color: #fff880;
+    background-color: #f5b26a;
     color: #000;
 }
 
