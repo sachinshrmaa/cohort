@@ -7,24 +7,22 @@ import styles from "./page.module.css"
 
 export const metadata = {
     title: 'Newsletter',
-    description: 'Join the basics newsletter to stay up-to-date on tech and careers updates and exclusive content to support your learning journey.',
+    description: 'Find the people who want to climb the same mountain as you and climb together. Join our weekly newsletter!',
 }
 
 
 const Newsletter = () => {
     return (  
         <div className="col-md-8 col-11 m-auto pageLayout">
-             <div className="row align-items-center">
 
-                <div className="col-md-6 col-12">
-                <h1 className={styles.heroTitle}>The Basics Newsletter</h1>
-                <p>Join the basics newsletter to stay up-to-date on tech and careers updates and exclusive content to support your learning journey.</p>
+            <div className={styles.heroSection}>
+                <h1 className={styles.heroTitle}>Find the people who want to climb the same mountain as you and climb together!</h1>
+                <p className={styles.heroSubHeading}>Join the basics newsletter to stay up-to-date on tech, coding, and careers updates and exclusive content to support your learning journey.</p>
 
-                
                 <form action="https://sachinshrmaa.us10.list-manage.com/subscribe/post?u=e94ac720736227167db541b5c&amp;id=5f3f8db4af&amp;f_id=0098c6e5f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="mt-md-5 mt-4 validate" target="_self">
-                    <div id="mc_embed_signup_scroll" className="row">
+                    <div id="mc_embed_signup_scroll">
 
-                        <div className="col-md-6 col-12">
+                        <div>
                             <input type="email" name="EMAIL" placeholder="yourmail@gmail.com" className={styles.emailInp} id="mce-EMAIL" required />
                             <span id="mce-EMAIL-HELPERTEXT" className="helper_text"></span>
 
@@ -40,7 +38,7 @@ const Newsletter = () => {
 
                         </div>
 
-                        <div className="col-md-6 col-12 mt-3 mt-md-0">
+                        <div className="mt-3">
                             <div className="optionalParent">
                                 <div className="clear foot">
                                 <input type="submit" value="Join Newsletter &rarr;" name="subscribe" id="mc-embedded-subscribe" className={styles.emailSubmit} />
@@ -52,14 +50,10 @@ const Newsletter = () => {
                 </form>
                 <p className="text-mute mt-2"><small>by joining you agree the <Link href='/legal/terms' className="text-decoration-none">terms</Link> and <Link href='/legal/privacy' className="text-decoration-none">privacy policy</Link>. </small></p>
 
-                </div>
 
-
-                <div className="col-md-6 col">
-                <Image src='/img/heroImg.png' width={400} height={350}  className={styles.heroImg} alt="the basics cohort" />
-                </div>
 
             </div>
+
         </div>
     );
 }

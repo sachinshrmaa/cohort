@@ -3,7 +3,6 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 import './globals.css'
 
 import Footer from '../components/Footer'
-import AlertNotification from '../components/AlertNotifaction'
 import Navbar from '../components/Navbar'
 
 import Script from 'next/script'
