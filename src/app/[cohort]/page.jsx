@@ -197,6 +197,7 @@ export default function Cohort() {
         </div>
     </div>
 
+
     <div className={styles.TestimonialSection}>
         <div className="col-11 m-auto">
             <h2 className="subHeading mb-1 text-center">Wall of Love...</h2>
@@ -213,7 +214,8 @@ export default function Cohort() {
             <Script async src="https://platform.twitter.com/widgets.js" charset="utf-8" />
         </div>
     </div>
-    
+
+
 </div>
   )
 }
