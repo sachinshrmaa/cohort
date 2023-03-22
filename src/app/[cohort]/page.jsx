@@ -5,6 +5,7 @@ import Script from "next/script"
 
 import styles from './page.module.css'
 import PaymentBtn from "../../components/PaymentBtn"
+import AboutCard from "../../components/AboutCard"
 
 export const metadata = {
     title: 'ReactJS for Beginners',
@@ -178,10 +179,11 @@ export default function Cohort() {
             <div className="mt-md-4">
                 <h4> Summary </h4>
                 <ul>
-                    <li><b>Class Duration:</b> 2 Days </li>
+                    <li><b>Class Duration:</b> 60 mins/5 days </li>
+                    <li><b>Class Timing:</b> 9 pm- 10 pm IST </li>
                     <li><b>Batch Size:</b> 20 Students</li>
-                    <li><b>Starts From:</b> 7 April 2023</li>
-                    <li><b>Ends on:</b> 8 April 2023</li>
+                    <li><b>Starts From:</b> 3 April 2023</li>
+                    <li><b>Ends on:</b> 7 April 2023</li>
                 </ul>
             </div>
 
@@ -196,6 +198,10 @@ export default function Cohort() {
 
         </div>
     </div>
+
+    {/* <div>
+        <AboutCard />
+    </div> */}
 
 
     <div className={styles.TestimonialSection}>
