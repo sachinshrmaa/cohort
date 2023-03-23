@@ -193,6 +193,7 @@ export default function Cohort() {
                     <a href='https://www.facebook.com/sharer/sharer.php?&u=https://thebasics.sachinsblog.in/reactjs-masterclass' target='_blank' rel="noreferrer" className="text-decoration-none"><i className="bi bi-facebook"></i> </a> <br />
                     <a href='https://www.linkedin.com/shareArticle?mini=true&url=https://thebasics.sachinsblog.in/reactjs-masterclass' target='_blank' rel="noreferrer" className="ms-4 text-decoration-none  "><i className="bi bi-linkedin"></i> </a> <br />
                     <a href='https://twitter.com/share?text=Looking to dive into frontend development with ReactJS? Check out this live class, "ReactJS for Beginners: A Hands-On Introduction to Frontend Development". &url=https://thebasics.sachinsblog.in/reactjs-masterclass' target='_blank' rel="noreferrer" className="ms-4  text-decoration-none"><i className="bi bi-twitter"></i> </a> <br />
+                    <a href='https://api.whatsapp.com/send?text=Looking to dive into frontend development with ReactJS? Check out this live class, "ReactJS for Beginners: A Hands-On Introduction to Frontend Development" Enroll Now: https://thebasics.sachinsblog.in/reactjs-masterclass' target='_blank' rel="noreferrer" className="ms-4  text-decoration-none"><i className="bi bi-whatsapp"></i> </a> <br />
                 </div>
             </div>
 
