@@ -25,13 +25,14 @@ export default function CourseCard(){
                         </ul>
                         <div className='d-flex'>
                             <PaymentBtn />
-                            <Link href='/reactjs-masterclass' className="text-decoration-none ms-4 pt-2" >Learn more &rarr; </Link>
+                            <Link href='/reactjs-masterclass' className="text-decoration-none ms-4 pt-2" >Learn more</Link>
                         </div>
                     </div>
                 </div>
 
                 <div className="col-md-4 m-md-4 m-0 order-md-2 order-1 ">
                     <Image src='/img/frontend-web-dev.png' width={300} height={200} className="img-fluid rounded-start card-img" alt='ReactJS for Beginners: A Hands-On Introduction to Frontend Development' />
+                    <p className='mt-4 price text-center'><b>₹ 249.0 </b> <small className="me-3 text-muted"><s>₹ 499.0</s></small><small className={styles.tags}>50% off</small></p>
                 </div>
             </div>
         </div>

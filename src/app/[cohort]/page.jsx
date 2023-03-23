@@ -28,7 +28,7 @@ export default function Cohort() {
                 <h4> Prerequisite </h4>
                 <p>Having a basics concept of HTML, CSS, JavaScript is must to take this masterclass.</p>
 
-                <h4 className="mt-md-5"> Content Covered </h4>
+                <h4 className="mt-5"> Content Covered </h4>
                 <div class="accordion accordion-flush" id="accordionContents">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingOne">
@@ -173,21 +173,21 @@ export default function Cohort() {
         <div className="col-md-4 order-0 order-md-1 order-lg-1 mb-5">
             <Image src='/img/frontend-web-dev.png' height={200} width={400} className="img-fluid mb-3" alt='title'/>
             
+            <p className='mt-4 price text-center'> <b>₹ 249.0 </b> <small className="me-3"><s>₹ 499.0</s></small><small className={styles.tags}>50% off</small></p>
             <PaymentBtn />
-            <small className="text-muted"> <i>Excluding 18% GST</i> </small> 
 
-            <div className="mt-md-4">
-                <h4> Summary </h4>
+            <div className="mt-4">
+                <h4>Class Summary </h4>
                 <ul>
-                    <li><b>Class Duration:</b> 60 mins/5 days </li>
-                    <li><b>Class Timing:</b> 9 pm- 10 pm IST </li>
+                    <li><b>Duration:</b> 60 mins/5 days </li>
+                    <li><b>Timing:</b> 9 pm- 10 pm IST </li>
                     <li><b>Batch Size:</b> 20 Students</li>
                     <li><b>Starts From:</b> 3 April 2023</li>
                     <li><b>Ends on:</b> 7 April 2023</li>
                 </ul>
             </div>
 
-            <div className="mt-md-5">
+            <div className="mt-5">
                 <h4>Share this Class</h4>
                 <div className="d-flex mt-3">       
                     <a href='https://www.facebook.com/sharer/sharer.php?&u=https://thebasics.sachinsblog.in/reactjs-masterclass' target='_blank' rel="noreferrer" className="text-decoration-none"><i className="bi bi-facebook"></i> </a> <br />
