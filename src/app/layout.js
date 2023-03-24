@@ -16,13 +16,20 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en"> 
+    <html lang="en">
+       
+     {/* adsense script */}
+     <Script 
+          strategy="beforeInteractive"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7352636507358273"
+          crossorigin="anonymous"
+      />
+
      {/* Google Analytics Script */}
       <Script 
         src="https://www.googletagmanager.com/gtag/js?id=G-M0S1K1Z1DT"
         strategy="afterInteractive"
       />
-      
       <Script id="google-analytics" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
