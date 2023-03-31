@@ -179,11 +179,11 @@ export default function Cohort() {
             <div className="mt-4">
                 <h4>Class Summary </h4>
                 <ul>
+                    <li><b>Starts From:</b> 6 April 2023</li>
+                    <li><b>Ends on:</b> 10 April 2023</li>
                     <li><b>Duration:</b> 60 mins/5 days </li>
                     <li><b>Timing:</b> 9 pm- 10 pm IST </li>
-                    <li><b>Batch Size:</b> 20 Students</li>
-                    <li><b>Starts From:</b> 3 April 2023</li>
-                    <li><b>Ends on:</b> 7 April 2023</li>
+                    <li><b>Batch Size:</b> 20 Students</li>  
                 </ul>
             </div>
 
