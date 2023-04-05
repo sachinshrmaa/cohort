@@ -444,9 +444,9 @@ export default function Cohort() {
         </div>
       </div>
 
-      {/* <div>
+      <div>
         <AboutCard />
-    </div> */}
+      </div>
 
       <div className={styles.TestimonialSection}>
         <div className="col-11 m-auto">
