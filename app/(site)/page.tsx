@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import TestimonialCard from "../components/TestimonialCard";
-import testimonials from "../data/testimonials";
+import TestimonialCard from "@/components/TestimonialCard";
+import testimonials from "@/data/testimonials";
 
 export default function Home() {
   return (
@@ -34,16 +34,21 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex">
-        {testimonials.map((test, index) => (
-          <TestimonialCard
-            key={index}
-            name={test.name}
-            message={test.message}
-            organization={test.organization}
-            keywords={test.keywords}
-          />
-        ))}
+      <div className="py-8">
+        <h1 className="my-2 text-4xl text-center">Wall of love...</h1>
+        <p className="text-center mb-8 text-md">What other people has to say about the basics class</p>
+
+        <div className="flex">
+          {testimonials.map((test, index) => (
+            <TestimonialCard
+              key={index}
+              name={test.name}
+              message={test.message}
+              organization={test.organization}
+              keywords={test.keywords}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

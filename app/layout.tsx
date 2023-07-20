@@ -1,5 +1,6 @@
-import NavBar from "../components/NavBar";
+import NavBar from "@/components/NavBar";
 import "./globals.css";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "The Basics Class by Sachin",
@@ -16,6 +17,7 @@ export default function RootLayout({
       <body>
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );

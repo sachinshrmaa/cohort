@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,7 +14,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   width: 100%;
-  max-width: 1140px; 
+  max-width: 1140px;
 }
 
 /* Media queries for responsiveness */
@@ -38,4 +40,9 @@ body {
   .container {
     max-width: 1140px;
   }
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 28px;
 }

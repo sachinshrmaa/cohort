@@ -5,12 +5,20 @@ export default function NavBar() {
   return (
     <nav className="w-full bg-slate-100">
       <div className="container h-14 flex justify-between items-center">
-        <Link href="/">the basics</Link>
+        <Link href="/" className="font-sans text-2xl text-blue-900 font-bold">
+          the basics
+        </Link>
         <div>
-          <Link className="mx-2" href="/">
+          <Link
+            className="mx-2 hover:text-blue-900"
+            href="/"
+          >
             About
           </Link>
-          <Link className="mx-2" href="/">
+          <Link
+            className="mx-2 hover:text-blue-900"
+            href="/"
+          >
             Contact
           </Link>
           <Link

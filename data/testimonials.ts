@@ -2,16 +2,25 @@ import { TestimonialData } from "../types/testimonial";
 
 const testimonials: TestimonialData[] = [
   {
-    name: "John Doe",
-    message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    organization: "ABC Company",
-    keywords: "lovely!",
+    name: "Prashant Rai",
+    message:
+      "It's was a really good experience, although it was your first class you tried your best and that is what kept me going like if Our teacher is trying his best then even us students shall try out best, and this class is the best for those who really desire to learn react js.",
+    organization: "SIST, Sikkim",
+    keywords: "Really good experience",
   },
   {
-    name: "Jane Smith",
-    message: "Vivamus eu ex euismod, rhoncus lectus non, tristique elit.",
-    organization: "XYZ Corporation",
-    keywords: "best experience!",
+    name: "Roshan Shah",
+    message:
+      "Love the classes. Very interactive and understood the concept very well. Very friendly classes which made me ask questions more comfortably",
+    organization: "VIT, Andhra Pradesh",
+    keywords: "Very interactive, Very friendly",
+  },
+  {
+    name: "Saheb Kumar Singh",
+    message:
+      "This guy has the aura of teaching any individual with making the topic interesting itself just like teaching JavaScript to a newbie...",
+    organization: "NEILET, Sikkim",
+    keywords: "Making the topic interesting",
   },
 ];
 
