@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Plus+Jakarta+Sans&family=Public+Sans&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,6 +6,7 @@
 
 body {
   margin: 0;
+  font-family: "Albert Sans", sans-serif;
 }
 
 .container {
@@ -43,6 +44,9 @@ body {
 }
 
 .logo {
-  font-weight: 700;
-  font-size: 28px;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: #fff;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }

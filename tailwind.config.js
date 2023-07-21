@@ -6,13 +6,18 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      serif: ["ui-serif", "Georgia"],
-      mono: ["ui-monospace", "SFMono-Regular"],
-      display: ["Oswald"],
-      body: ['"Open Sans"'],
       sans: ["Josefin Sans", "sans-serif"],
+      body: ["Albert Sans", "sans-serif"],
     },
-    extend: {},
+    extend: {
+      colors: {
+        brand: {
+          primary: "#000",
+          seconday: "#fff",
+          accent: "#f5b26a",
+        },
+      },
+    },
   },
   plugins: [],
 };
