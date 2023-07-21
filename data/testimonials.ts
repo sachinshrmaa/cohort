@@ -25,6 +25,62 @@ const testimonials: TestimonialData[] = [
     organization: "NEILET, Sikkim",
     keywords: "Making the topic interesting",
   },
+  {
+    id: 4,
+    name: "Saheb Kumar Singh",
+    message:
+      "This guy has the aura of teaching any individual with making the topic interesting itself just like teaching JavaScript to a newbie...",
+    organization: "NEILET, Sikkim",
+    keywords: "Making the topic interesting",
+  },
+  {
+    id: 5,
+    name: "Saheb Kumar Singh",
+    message:
+      "This guy has the aura of teaching any individual wura of teaching any individual with making the topic interesting itself just like teaching JavaScript to a newbie...",
+    organization: "NEILET, Sikkim",
+    keywords: "Making the topic interesting",
+  },
+  {
+    id: 6,
+    name: "Saheb Kumar Singh",
+    message:
+      "This guy has the aura of tura of teaching any individual weaching any individual with making the topic interesting itself just like teaching JavaScript to a newbie...",
+    organization: "NEILET, Sikkim",
+    keywords: "Making the topic interesting",
+  },
+  {
+    id: 7,
+    name: "Saheb Kumar Singh",
+    message:
+      "The teaching any individual with making the topic interesting itself just like teaching JavaScript to a newbie...",
+    organization: "NEILET, Sikkim",
+    keywords: "Making the topic interesting",
+  },
+  {
+    id: 8,
+    name: "Saheb Kumar Singh",
+    message:
+      "The teaching any individual with making the topic interesting itself just like teaching JavaScript to a newbie...",
+    organization: "NEILET, Sikkim",
+    keywords: "Making the topic interesting",
+  },
+  {
+    id: 9,
+    name: "Saheb Kumar Singh",
+    message:
+      "The teaching any individual with making the topic interesting itself just like teaching JavaScript to a newbie...",
+    organization: "NEILET, Sikkim",
+    keywords: "Making the topic interesting",
+  },
+  {
+    id: 10,
+    name: "Saheb Kumar Singh",
+    message:
+      "The teaching any individual with making the topic interesting itself just like teaching JavaScript to a newbie...",
+    organization: "NEILET, Sikkim",
+    keywords: "Making the topic interesting",
+  },
 ];
 
 export default testimonials;
