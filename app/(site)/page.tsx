@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-blue-50 to-purple-100  py-14">
+      <div className="bg-brand-secondary py-14">
         <div className="container text-center md:text-left">
           <div className="grid md:grid-cols-2 md:space-x-8 md:items-center">
             <div className="md:hidden block">
@@ -23,9 +23,9 @@ export default function Home() {
               />
             </div>
             <div className="mb-6">
-              <h1 className="text-6xl font-bold my-6">
+              <h1 className="text-6xl font-poppins font-semibold font-sans my-6">
                 Learn.{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-500 h-48">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% h-48">
                   Build.
                 </span>{" "}
                 Repeat.
@@ -36,16 +36,13 @@ export default function Home() {
                 collaboration, and idea sharing.
               </p>
 
-              <Link
-                className="bg-brand-accent px-10 py-4 rounded-md hover:bg-yellow-600 "
-                href="/"
-              >
+              <Link className="btn" href="#get-started">
                 Explore Courses
               </Link>
             </div>
             <div className="hidden md:block">
               <Image
-                src="/hero_img.png"
+                src="/india-map.png"
                 alt="India map"
                 width={420}
                 height={420}
@@ -57,11 +54,13 @@ export default function Home() {
       </div>
 
       {/* Courses Section */}
-      <section className="py-6">
+      <section className="py-6" id="get-started">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-5">
             <div className="md:col-span-2 mt-6">
-              <h1 className="text-4xl mb-4">Get Started</h1>
+              <h1 className="text-4xl mb-4 font-poppins font-normal md:font-medium">
+                Get Started
+              </h1>
               <p className="mb-6 text-md">
                 The cohort can be accessed remotely via Google meet.
               </p>
@@ -90,10 +89,12 @@ export default function Home() {
       </section>
 
       {/* Testimonial Section */}
-      <section className="bg-gradient-to-r from-blue-50 to-purple-100  py-8">
+      <section className="bg-brand-secondary  py-8">
         <div className="container py-8">
           <div className="text-center mb-4 mt-8">
-            <h1 className="text-4xl mb-4">Wall of Love...</h1>
+            <h1 className="text-4xl mb-4 font-poppins font-normal md:font-medium">
+              Wall of Love...
+            </h1>
             <p className="mb-8 text-md">
               What other people has to say about the basics className
             </p>
@@ -113,7 +114,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
     </div>
   );
 }

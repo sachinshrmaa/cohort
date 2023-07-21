@@ -22,7 +22,7 @@ const testimonials: TestimonialData[] = [
     name: "Saheb Kumar Singh",
     message:
       "This guy has the aura of teaching any individual with making the topic interesting itself just like teaching JavaScript to a newbie...",
-    organization: "NEILET, Sikkim",
+    organization: "NIELIT, Sikkim",
     keywords: "Making the topic interesting",
   },
   {
@@ -30,23 +30,23 @@ const testimonials: TestimonialData[] = [
     name: "Saheb Kumar Singh",
     message:
       "This guy has the aura of teaching any individual with making the topic interesting itself just like teaching JavaScript to a newbie...",
-    organization: "NEILET, Sikkim",
+    organization: "NIELIT, Sikkim",
     keywords: "Making the topic interesting",
   },
   {
     id: 5,
-    name: "Saheb Kumar Singh",
+    name: "Aman Gupta",
     message:
-      "This guy has the aura of teaching any individual wura of teaching any individual with making the topic interesting itself just like teaching JavaScript to a newbie...",
-    organization: "NEILET, Sikkim",
-    keywords: "Making the topic interesting",
+      "I'd like to give a shoutout to Sachin K. Sharma , who was an integral part of our project. His expertise and dedication were instrumental in ensuring the project's success. He always went above and beyond to make sure that the task was completed on time and to the best of his abilities. His contributions to the team were greatly appreciated and helped us achieve our goals. Thank you for your hard work and dedication, Sachin K. Sharma!",
+    organization: "NIELIT, Sikkim",
+    keywords: "Expertise and Dedication",
   },
   {
     id: 6,
     name: "Saheb Kumar Singh",
     message:
       "This guy has the aura of tura of teaching any individual weaching any individual with making the topic interesting itself just like teaching JavaScript to a newbie...",
-    organization: "NEILET, Sikkim",
+    organization: "NIELIT, Sikkim",
     keywords: "Making the topic interesting",
   },
   {
@@ -54,7 +54,7 @@ const testimonials: TestimonialData[] = [
     name: "Saheb Kumar Singh",
     message:
       "The teaching any individual with making the topic interesting itself just like teaching JavaScript to a newbie...",
-    organization: "NEILET, Sikkim",
+    organization: "NIELIT, Sikkim",
     keywords: "Making the topic interesting",
   },
   {
@@ -62,23 +62,7 @@ const testimonials: TestimonialData[] = [
     name: "Saheb Kumar Singh",
     message:
       "The teaching any individual with making the topic interesting itself just like teaching JavaScript to a newbie...",
-    organization: "NEILET, Sikkim",
-    keywords: "Making the topic interesting",
-  },
-  {
-    id: 9,
-    name: "Saheb Kumar Singh",
-    message:
-      "The teaching any individual with making the topic interesting itself just like teaching JavaScript to a newbie...",
-    organization: "NEILET, Sikkim",
-    keywords: "Making the topic interesting",
-  },
-  {
-    id: 10,
-    name: "Saheb Kumar Singh",
-    message:
-      "The teaching any individual with making the topic interesting itself just like teaching JavaScript to a newbie...",
-    organization: "NEILET, Sikkim",
+    organization: "NIELIT, Sikkim",
     keywords: "Making the topic interesting",
   },
 ];

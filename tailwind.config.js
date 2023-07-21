@@ -6,15 +6,15 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans: ["Josefin Sans", "sans-serif"],
-      body: ["Albert Sans", "sans-serif"],
+      poppins: ["var(--font-poppins)"],
+      albert: ["var(--font-albert-sans)"],
     },
     extend: {
       colors: {
         brand: {
-          primary: "#000",
-          seconday: "#fff",
-          accent: "#f5b26a",
+          primary: "#3CCF4E",
+          secondary: "#FEFBF6",
+          accent: "#EF5B0C",
         },
       },
     },

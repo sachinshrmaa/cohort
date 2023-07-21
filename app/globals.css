@@ -1,12 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Plus+Jakarta+Sans&family=Public+Sans&display=swap");
-
 @tailwind base;
 @tailwind components;
+
+.btn {
+  @apply bg-brand-primary hover:bg-green-600 text-brand-secondary px-10 py-4 rounded-md font-normal;
+}
+
 @tailwind utilities;
 
 body {
   margin: 0;
-  font-family: "Albert Sans", sans-serif;
 }
 
 .container {
@@ -47,6 +49,5 @@ body {
   font-size: 20px;
   font-weight: 900;
   letter-spacing: 1px;
-  color: #fff;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #1a5d1a;
 }
