@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container py-8">
         <div className="grid">
           <div>
-            <h2 className="font-albert logo mb-4">the bascis class</h2>
+            <h2 className="font-albert logo mb-4">the basics class</h2>
             <p className="text-slate-600">Made with ❤ by Sachin</p>
           </div>
         </div>
