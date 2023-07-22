@@ -8,6 +8,20 @@ const bootcamps: BootcampData[] = [
     description: "Complete 12 weeks full stack web development bootcamp.🌐🔧",
     price: 4999,
     thumbnail: "/img/Open-Source-Workshop.jpg",
+    content: {
+      body: "this is a body",
+      modules: {
+        module1: "module 1",
+        module2: "module 2",
+      },
+    },
+    detail: {
+      start: "01/09/2023",
+      end: "01/09/2023",
+      duration: "12 weeks",
+      timing: "9:00 pm IST",
+      size: 50,
+    },
   },
 ];
 

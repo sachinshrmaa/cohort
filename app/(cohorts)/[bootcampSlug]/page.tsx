@@ -65,7 +65,17 @@ export default function BootcampPage({ params }) {
               <h1 className="text-2xl font-semibold font-poppins mb-6 leading-8 md:leading-[50px] md:text-4xl">
                 {cohort.name}
               </h1>
-              <p className="text-md md:text-lg">{cohort.description}</p>
+              <p className="text-md mb-4 md:text-lg">{cohort.description}</p>
+
+              <p className="text-md mb-4 md:text-lg">{cohort.content.body}</p>
+
+              <div>
+                {Object.keys(cohort.content.modules).map((moduleKey) => (
+                  <div key={moduleKey}>
+                    <p>{cohort.content.modules[moduleKey]}</p>
+                  </div>
+                ))}
+              </div>
             </div>
             <div className="hidden md:block md:col-span-2">
               <Image
@@ -81,6 +91,32 @@ export default function BootcampPage({ params }) {
                   Enroll Now &nbsp; ₹{cohort.price}.0
                 </p>
               </Link>
+
+              <div className="mt-8">
+                <h2 className="text-xl my-6 font-semibold">Cohort Details</h2>
+                <ul className="list-disc ms-6 my-4">
+                  <li>
+                    <b>Start Date: </b>
+                    {cohort.detail.start}
+                  </li>
+                  <li>
+                    <b>End Date: </b>
+                    {cohort.detail.end}
+                  </li>
+                  <li>
+                    <b>Cohort Duration: </b>
+                    {cohort.detail.duration}
+                  </li>
+                  <li>
+                    <b>Timing: </b>
+                    {cohort.detail.timing}
+                  </li>
+                  <li>
+                    <b>Batch Size: </b>
+                    {cohort.detail.size}
+                  </li>
+                </ul>
+              </div>
 
               <div className="mt-8">
                 <h2 className="text-xl my-6 font-semibold">Share this Class</h2>
