@@ -4,6 +4,7 @@ import Link from "next/link";
 import React from "react";
 import NotFound from "@/app/not-found";
 import { Metadata } from "next";
+import Accordion from "@/components/Accordion";
 
 type Props = {
   params: { bootcampSlug: string };
@@ -70,9 +71,15 @@ export default function BootcampPage({ params }) {
               <p className="text-md mb-4 md:text-lg">{cohort.content.body}</p>
 
               <div>
+                <h2 className="text-xl my-6 font-semibold">Content Covered</h2>
+
                 {Object.keys(cohort.content.modules).map((moduleKey) => (
                   <div key={moduleKey}>
-                    <p>{cohort.content.modules[moduleKey]}</p>
+                    <Accordion
+                      key={moduleKey}
+                      name={cohort.content.modules[moduleKey].name} 
+                      content={cohort.content.modules[moduleKey].content} 
+                    />
                   </div>
                 ))}
               </div>

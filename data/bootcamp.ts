@@ -10,10 +10,16 @@ const bootcamps: BootcampData[] = [
     thumbnail: "/img/Open-Source-Workshop.jpg",
     content: {
       body: "this is a body",
-      modules: {
-        module1: "module 1",
-        module2: "module 2",
-      },
+      modules: [
+        {
+          name: "HTML",
+          content: "introduction to html",
+        },
+        {
+          name: "CSS",
+          content: "introduction to css",
+        },
+      ],
     },
     detail: {
       start: "01/09/2023",

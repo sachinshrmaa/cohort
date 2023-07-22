@@ -1,10 +1,13 @@
 import { type } from "os";
 
+interface BootcampModule {
+  name: string;
+  content: string;
+}
+
 interface BootcampContent {
   body: string;
-  modules: {
-    [key: string]: string;
-  };
+  modules: Module[];
 }
 
 interface BootcampDetail {

@@ -3,7 +3,7 @@ import React from "react";
 
 export default function NavBar() {
   return (
-    <nav className="w-full border-b-2">
+    <nav className="w-full border">
       <div className="container h-16 flex justify-between items-center text-dark">
         <Link
           href="/"
@@ -18,7 +18,7 @@ export default function NavBar() {
           <Link className="mx-2 hover:text-green-600" href="/contact">
             Contact
           </Link>
-          <Link className="mx-2 btn py-2" href="#get-started">
+          <Link className="mx-2 btn py-2" href="/full">
             Enroll
           </Link>
         </div>
