@@ -12,10 +12,10 @@ export default function NavBar() {
           the basics
         </Link>
         <div>
-          <Link className="mx-2 hover:text-green-600" href="/">
+          <Link className="mx-2 hover:text-green-600" href="/about">
             About
           </Link>
-          <Link className="mx-2 hover:text-green-600" href="/">
+          <Link className="mx-2 hover:text-green-600" href="/contact">
             Contact
           </Link>
           <Link className="mx-2 btn py-2" href="#get-started">

@@ -61,11 +61,11 @@ export default function Home() {
               <h1 className="text-4xl mb-4 font-poppins font-normal md:font-medium">
                 Get Started
               </h1>
-              <p className="mb-6 text-md">
+              <p className="mb-4 text-md">
                 The cohort can be accessed remotely via Google meet.
               </p>
               <p className="mb-6 text-md">To get started, you’ll need: </p>
-              <ul>
+              <ul className="list-disc ms-10">
                 <li>Internet connection 🌐</li>
                 <li>Laptop/phone 💻</li>
                 <li>Valid email 📧</li>

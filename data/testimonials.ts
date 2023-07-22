@@ -27,10 +27,10 @@ const testimonials: TestimonialData[] = [
   },
   {
     id: 4,
-    name: "Saheb Kumar Singh",
+    name: "Phup Lamu Bhutia",
     message:
       "This guy has the aura of teaching any individual with making the topic interesting itself just like teaching JavaScript to a newbie...",
-    organization: "NIELIT, Sikkim",
+    organization: "Indo Global College, Chandigarh",
     keywords: "Making the topic interesting",
   },
   {
