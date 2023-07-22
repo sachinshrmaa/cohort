@@ -19,7 +19,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 md:space-x-8 md:items-center">
             <div className="flex justify-center md:hidden sm:block">
               <Image
-                src="/hero_img.png"
+                src="/india-map.png"
                 alt="India map"
                 width={200}
                 height={200}

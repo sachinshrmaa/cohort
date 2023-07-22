@@ -1,12 +1,15 @@
 ### Features
 
-- [ ] add workshop card and page
+- [x] add workshop card and page
 - [ ] add bootcamp card and detailed page
 - [ ] add payment option
-- [ ] style the page
-- [ ] make it responsive
+- [x] style the page
+- [x] make it responsive
 - [ ] add email signup feature for newsletter and waitling list
-- [ ] add testimonials section
-- [ ] contact, about pages
+- [x] add testimonials section
+- [x] contact, about pages
 - [ ] legal pages
 - [ ] support pages like faq
+- [] seo frindly
+- [] improve performance
+- []
