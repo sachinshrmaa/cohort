@@ -4,6 +4,7 @@ import Link from "next/link";
 import React from "react";
 import NotFound from "../not-found";
 
+
 export default function WorkshopPage({ params }) {
   const { workshopSlug } = params;
   const workshop = workshops.filter((cohort) => cohort.slug === workshopSlug);

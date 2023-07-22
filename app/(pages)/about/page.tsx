@@ -1,5 +1,12 @@
 import React from "react";
 
+
+export const metadata = {
+  title: "About — The Basics Class by Sachin",
+  description: "the basics class by sachin sharma",
+};
+
+
 export default function About() {
   return (
     <div className="bg-brand-secondary py-10 min-h-[70vh]">

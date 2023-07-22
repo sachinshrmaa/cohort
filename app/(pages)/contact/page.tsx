@@ -1,5 +1,9 @@
+import React from "react";
 
-import React from 'react'
+export const metadata = {
+  title: "Contact Us — The Basics Class by Sachin",
+  description: "the basics class by sachin sharma",
+};
 
 export default function Contact() {
   return (

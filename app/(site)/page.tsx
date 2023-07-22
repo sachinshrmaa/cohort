@@ -5,6 +5,11 @@ import testimonials from "@/data/testimonials";
 import workshops from "@/data/workshops";
 import WorkshopCard from "@/components/WorkshopCard";
 
+export const metadata = {
+  title: "Home — The Basics Class by Sachin",
+  description: "the basics class by sachin sharma",
+};
+
 export default function Home() {
   return (
     <div>
@@ -12,7 +17,7 @@ export default function Home() {
       <div className="bg-brand-secondary py-14">
         <div className="container text-center md:text-left">
           <div className="grid md:grid-cols-2 md:space-x-8 md:items-center">
-            <div className="md:hidden block">
+            <div className="flex justify-center md:hidden sm:block">
               <Image
                 src="/hero_img.png"
                 alt="India map"
