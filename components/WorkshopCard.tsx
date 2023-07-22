@@ -26,10 +26,13 @@ const WorkshopCard: FC<WorkshopData> = ({
         <h1 className="text-2xl my-4 font-normal font-albert">{name}</h1>
         <p className="mb-4">{description}</p>
         <div className="flex justify-between items-center">
-          <Link className="text-blue-800 hover:text-blue-900" href={slug}>
+          <Link
+            className="text-blue-800 hover:text-blue-900"
+            href={`/workshop/${slug}`}
+          >
             Learn more <span>&rarr;</span>
           </Link>
-          <Link className="btn py-2" href={slug}>
+          <Link className="btn py-2" href={`/workshop/${slug}`}>
             Enroll {price === 0 ? "FREE" : `₹ ${price}.0`}
           </Link>
         </div>

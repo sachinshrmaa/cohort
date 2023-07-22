@@ -1,36 +1,36 @@
-import workshops from "@/data/workshops";
+import bootcamps from "@/data/bootcamp";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import NotFound from "../not-found";
+import NotFound from "@/app/not-found";
 import { Metadata } from "next";
 
 type Props = {
-  params: { workshopSlug: string };
+  params: { bootcampSlug: string };
 };
 
-export async function generateMetadata({ params }:Props): Promise<Metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // read route params
-  const { workshopSlug } = params;
+  const { bootcampSlug } = params;
 
   // fetch data
-  const workshop = workshops.filter((cohort) => cohort.slug === workshopSlug);
-  
+  const bootcamp = bootcamps.filter((cohort) => cohort.slug === bootcampSlug);
+
   return {
-    title: `${workshop.map((cohort) => cohort.name)}`,
-    description: `${workshop.map((cohort) => cohort.description)}`,
+    title: `${bootcamp.map((cohort) => cohort.name)}`,
+    description: `${bootcamp.map((cohort) => cohort.description)}`,
   };
 }
 
-export default function WorkshopPage({ params }) {
+export default function BootcampPage({ params }) {
   // read route params
-  const { workshopSlug } = params;
+  const { bootcampSlug } = params;
 
   // fetch data
-  const workshop = workshops.filter((cohort) => cohort.slug === workshopSlug);
+  const bootcamp = bootcamps.filter((cohort) => cohort.slug === bootcampSlug);
 
   // If no matching workshop found, return 404 page not found
-  if (workshop.length === 0) {
+  if (bootcamp.length === 0) {
     return <NotFound />;
   }
 
@@ -40,7 +40,7 @@ export default function WorkshopPage({ params }) {
         <Link href="/" className="text-blue-900">
           &larr; back to home
         </Link>
-        {workshop.map((cohort) => (
+        {bootcamp.map((cohort) => (
           <div
             key={cohort.id}
             className="grid grid-cols-1 md:grid-cols-6 mt-4 md:mt-6 md:gap-4"
