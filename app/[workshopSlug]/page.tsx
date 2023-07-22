@@ -3,10 +3,30 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import NotFound from "../not-found";
+import { Metadata } from "next";
 
+type Props = {
+  params: { workshopSlug: string };
+};
+
+export async function generateMetadata({ params }:Props): Promise<Metadata> {
+  // read route params
+  const { workshopSlug } = params;
+
+  // fetch data
+  const workshop = workshops.filter((cohort) => cohort.slug === workshopSlug);
+  
+  return {
+    title: `${workshop.map((cohort) => cohort.name)}`,
+    description: `${workshop.map((cohort) => cohort.description)}`,
+  };
+}
 
 export default function WorkshopPage({ params }) {
+  // read route params
   const { workshopSlug } = params;
+
+  // fetch data
   const workshop = workshops.filter((cohort) => cohort.slug === workshopSlug);
 
   // If no matching workshop found, return 404 page not found
@@ -32,6 +52,7 @@ export default function WorkshopPage({ params }) {
                 width={1000}
                 height={350}
                 className="rounded-md w-full mb-10"
+                priority
               />
 
               <Link className="text-center" href="/">

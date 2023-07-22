@@ -21,10 +21,9 @@ export default function Home() {
               <Image
                 src="/hero_img.png"
                 alt="India map"
-                width={420}
-                height={420}
+                width={200}
+                height={200}
                 priority
-                className="h-[200px] w-[200px]"
               />
             </div>
             <div className="mb-6">
