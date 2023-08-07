@@ -4,6 +4,7 @@ import TestimonialCard from "@/components/TestimonialCard";
 import testimonials from "@/data/testimonials";
 import workshops from "@/data/workshops";
 import WorkshopCard from "@/components/WorkshopCard";
+import bootcamps from "@/data/bootcamp";
 
 export const metadata = {
   title: "Home — The Basics Class by Sachin",
@@ -40,7 +41,7 @@ export default function Home() {
                 collaboration, and idea sharing.
               </p>
 
-              <Link className="btn" href="#get-started">
+              <Link className="btn" href="#courses">
                 Explore Courses
               </Link>
             </div>
@@ -57,8 +58,8 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Courses Section */}
-      <section className="py-6" id="get-started">
+      {/* Bootcamp Section */}
+      <section className="py-6">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-5">
             <div className="md:col-span-2 mt-6">
@@ -66,28 +67,67 @@ export default function Home() {
                 Get Started
               </h1>
               <p className="mb-4 text-md">
-                The cohort can be accessed remotely via Google meet.
+                The cohorts can be accessed remotely via Google meet.
               </p>
               <p className="mb-6 text-md">To get started, you’ll need: </p>
               <ul className="list-disc ms-10">
                 <li>Internet connection 🌐</li>
                 <li>Laptop/phone 💻</li>
                 <li>Valid email 📧</li>
+                <li>Budget friendly fees💳</li>
               </ul>
             </div>
             <div className="md:col-span-3">
-              {workshops.map((workshop, index) => (
+              {bootcamps.map((bootcamp, index) => (
                 <WorkshopCard
                   key={index}
-                  id={workshop.id}
-                  name={workshop.name}
-                  description={workshop.description}
-                  price={workshop.price}
-                  thumbnail={workshop.thumbnail}
-                  slug={workshop.slug}
+                  id={bootcamp.id}
+                  name={bootcamp.name}
+                  description={bootcamp.description}
+                  price={bootcamp.price}
+                  thumbnail={bootcamp.thumbnail}
+                  slug={bootcamp.slug}
                 />
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Courses Section */}
+      <section className="py-16 bg-green-50" id="courses">
+        <div className="container">
+          <div className="text-center mb-8">
+            <h1 className="text-4xl mb-2 font-poppins font-normal md:font-medium">
+              Workshops
+            </h1>
+            <p className="mb-4 text-md">
+              Ongoing and Upcoming cohorts.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {workshops.map((workshop, index) => (
+              <div key={index} className="border rounded-md bg-white p-4">
+                <Image
+                  src={workshop.thumbnail}
+                  width={1000}
+                  height={270}
+                  alt={workshop.name}
+                  className="rounded-md w-full"
+                />
+                <h1 className="text-xl my-4 font-normal font-albert">
+                  {workshop.name}
+                </h1>
+                <p className="text-gray-600 text-md mb-4">{workshop.description}</p>
+                <Link
+                  className="text-blue-800 hover:text-blue-900"
+                  href={`/workshop/${workshop.slug}`}
+                >
+                  Learn more <span>&rarr;</span>
+                </Link>
+              </div>
+            ))}
           </div>
         </div>
       </section>

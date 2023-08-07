@@ -3,7 +3,7 @@ import { BootcampData } from "@/types/bootcamp";
 const bootcamps: BootcampData[] = [
   {
     id: 1,
-    slug: "full",
+    slug: "fullstack-bootcamp",
     name: "Full Stack Web Development",
     description: "Complete 12 weeks full stack web development bootcamp.🌐🔧",
     price: 4999,
@@ -23,7 +23,7 @@ const bootcamps: BootcampData[] = [
     },
     detail: {
       start: "01/09/2023",
-      end: "01/09/2023",
+      end: "30/11/2023",
       duration: "12 weeks",
       timing: "9:00 pm IST",
       size: 50,
