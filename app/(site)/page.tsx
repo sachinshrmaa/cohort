@@ -80,6 +80,7 @@ export default function Home() {
             <div className="md:col-span-3">
               {bootcamps.map((bootcamp, index) => (
                 <BootcampCard
+                  key={index}
                   id={bootcamp.id}
                   slug={bootcamp.slug}
                   name={bootcamp.name}
