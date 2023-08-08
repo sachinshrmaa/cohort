@@ -18,7 +18,10 @@ export default function NavBar() {
           <Link className="mx-2 hover:text-green-600" href="/contact">
             Contact
           </Link>
-          <Link className="mx-2 btn py-2" href="/fullstack-bootcamp">
+          <Link
+            className="mx-2 btn py-2"
+            href="/mastering-modern-fullstack-web-development"
+          >
             Enroll
           </Link>
         </div>

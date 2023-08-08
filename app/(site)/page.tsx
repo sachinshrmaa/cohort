@@ -42,7 +42,7 @@ export default function Home() {
               </p>
 
               <Link className="btn" href="#courses">
-                Explore Courses
+                Explore Cohorts
               </Link>
             </div>
             <div className="hidden md:block">
@@ -88,6 +88,7 @@ export default function Home() {
                   thumbnail={bootcamp.thumbnail}
                   content={bootcamp.content}
                   detail={bootcamp.detail}
+                  status={bootcamp.status}
                 />
               ))}
             </div>

@@ -1,7 +1,7 @@
 import { type } from "os";
 
 interface BootcampModule {
-  id: number,
+  id: number;
   name: string;
   content: string;
 }
@@ -25,6 +25,7 @@ export type BootcampData = {
   name: string;
   description: string;
   price: number;
+  status: string;
   thumbnail: string;
   content: BootcampContent;
   detail: BootcampDetail;

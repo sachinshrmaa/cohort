@@ -56,19 +56,25 @@ export default function BootcampPage({ params }) {
                 priority
               />
 
-              <Link className="text-center" href="/">
-                <p className="btn py-2 w-full">
-                  Enroll Now &nbsp; ₹{cohort.price}.0
-                </p>
-              </Link>
+              {cohort.status === "active" ? (
+                <Link className="text-center" href="/">
+                  <p className="btn py-2 = w-full">
+                    Enroll Now &nbsp; ₹{cohort.price}.0
+                  </p>
+                </Link>
+              ) : (
+                <Link className="text-center" href="/">
+                  <p className="btn py-2 = w-full">Join Waitlist →</p>
+                </Link>
+              )}
             </div>
             <div className="md:col-span-4 md:w-[92%]">
               <h1 className="text-2xl font-semibold font-poppins mb-6 leading-8 md:leading-[50px] md:text-4xl">
                 {cohort.name}
               </h1>
-              <p className="text-md mb-4 md:text-lg">{cohort.description}</p>
+              <p className="text-md mb-4 md:text-md">{cohort.description}</p>
 
-              <p className="text-md mb-4 md:text-lg">{cohort.content.body}</p>
+              <p className="text-md mb-4 md:text-md">{cohort.content.body}</p>
 
               <div>
                 <h2 className="text-xl my-6 font-semibold">Content Covered</h2>
@@ -85,17 +91,17 @@ export default function BootcampPage({ params }) {
 
                 <div className="mt-8">
                   <small>
-                    <b>Disclaimer: </b>While we strive to provide the best learning
-                    experience possible, please note that the course outline
-                    mentioned above is subject to minor adjustments based on
-                    factors such as student progress, emerging technologies, and
-                    industry trends. Our primary goal is to ensure that you
-                    receive the most up-to-date and relevant education in the
-                    field of web development. Any modifications to the course
-                    outline will be made with the intention of enhancing your
-                    learning journey. We appreciate your understanding and
-                    flexibility as we work together to provide you with a
-                    top-notch educational experience
+                    <b>Disclaimer: </b>While we strive to provide the best
+                    learning experience possible, please note that the course
+                    outline mentioned above is subject to minor adjustments
+                    based on factors such as student progress, emerging
+                    technologies, and industry trends. Our primary goal is to
+                    ensure that you receive the most up-to-date and relevant
+                    education in the field of web development. Any modifications
+                    to the course outline will be made with the intention of
+                    enhancing your learning journey. We appreciate your
+                    understanding and flexibility as we work together to provide
+                    you with a top-notch educational experience
                   </small>
                 </div>
               </div>
@@ -109,11 +115,17 @@ export default function BootcampPage({ params }) {
                 className="rounded-md w-full mb-6"
               />
 
-              <Link className="text-center" href="/">
-                <p className="btn py-2 = w-full">
-                  Enroll Now &nbsp; ₹{cohort.price}.0
-                </p>
-              </Link>
+              {cohort.status === "active" ? (
+                <Link className="text-center" href="/">
+                  <p className="btn py-2 = w-full">
+                    Enroll Now &nbsp; ₹{cohort.price}.0
+                  </p>
+                </Link>
+              ) : (
+                <Link className="text-center" href="/">
+                  <p className="btn py-2 = w-full">Join Waitlist →</p>
+                </Link>
+              )}
 
               <div className="mt-8">
                 <h2 className="text-xl my-6 font-semibold">Cohort Details</h2>

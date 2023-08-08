@@ -3,11 +3,12 @@ import { BootcampData } from "@/types/bootcamp";
 const bootcamps: BootcampData[] = [
   {
     id: 1,
-    slug: "fullstack-bootcamp",
+    slug: "mastering-modern-fullstack-web-development",
     name: "Mastering Modern Web Development from Scratch",
     description:
       "Master the art of web development with our intensive 12 weeks Full Stack Web Development Bootcamp. ",
     price: 4999,
+    status: "upcoming",
     thumbnail: "/img/Open-Source-Workshop.jpg",
     content: {
       body: "Learn HTML5, CSS3, JavaScript, React, Next.js, Git, Node.js, MongoDB, authentication, deployment, and more. Build real-world projects, optimize performance, and create a stunning portfolio. Elevate your skills and launch your career in tech.",
