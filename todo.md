@@ -9,7 +9,11 @@
 - [x] add testimonials section
 - [x] contact, about pages
 - [x] legal pages
-- [ ] support pages like faq
+- [] support pages like faq
 - [] seo frindly
 - [] improve performance
+- [] add readme page
+- [] add google analytics measure
+- []
+- []
 - []

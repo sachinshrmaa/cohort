@@ -29,9 +29,9 @@ const BootcampCard: FC<BootcampData> = ({
           <Link className="text-blue-800 hover:text-blue-900" href={`/${slug}`}>
             Learn more <span>&rarr;</span>
           </Link>
-          <Link className="btn py-2" href={`/workshop/${slug}`}>
-            Enroll {price === 0 ? "FREE" : `₹ ${price}.0`}
-          </Link>
+
+          <span className="mr-4 font-semibold bg-green-100 px-4 py-1 rounded-md">{price === 0 ? "FREE" : `₹ ${price}.0`}</span>
+          
         </div>
       </div>
     </div>
