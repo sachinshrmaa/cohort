@@ -3,7 +3,7 @@ import Link from "next/link";
 import TestimonialCard from "@/components/TestimonialCard";
 import testimonials from "@/data/testimonials";
 import workshops from "@/data/workshops";
-import WorkshopCard from "@/components/WorkshopCard";
+import BootcampCard from "@/components/BootcampCard";
 import bootcamps from "@/data/bootcamp";
 
 export const metadata = {
@@ -69,7 +69,7 @@ export default function Home() {
               <p className="mb-4 text-md">
                 The cohorts can be accessed remotely via Google meet.
               </p>
-              <p className="mb-6 text-md">To get started, you’ll need: </p>
+              <p className="mb-6 text-md">To get started, you&apos;ll need: </p>
               <ul className="list-disc ms-10">
                 <li>Internet connection 🌐</li>
                 <li>Laptop/phone 💻</li>
@@ -79,14 +79,15 @@ export default function Home() {
             </div>
             <div className="md:col-span-3">
               {bootcamps.map((bootcamp, index) => (
-                <WorkshopCard
-                  key={index}
+                <BootcampCard
                   id={bootcamp.id}
+                  slug={bootcamp.slug}
                   name={bootcamp.name}
                   description={bootcamp.description}
                   price={bootcamp.price}
                   thumbnail={bootcamp.thumbnail}
-                  slug={bootcamp.slug}
+                  content={bootcamp.content}
+                  detail={bootcamp.detail}
                 />
               ))}
             </div>
@@ -101,9 +102,7 @@ export default function Home() {
             <h1 className="text-4xl mb-2 font-poppins font-normal md:font-medium">
               Workshops
             </h1>
-            <p className="mb-4 text-md">
-              Ongoing and Upcoming cohorts.
-            </p>
+            <p className="mb-4 text-md">Ongoing and Upcoming cohorts.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -116,16 +115,22 @@ export default function Home() {
                   alt={workshop.name}
                   className="rounded-md w-full"
                 />
+
                 <h1 className="text-xl my-4 font-normal font-albert">
                   {workshop.name}
                 </h1>
-                <p className="text-gray-600 text-md mb-4">{workshop.description}</p>
+                <p className="text-gray-600 text-md mb-4">
+                  {workshop.description}
+                </p>
                 <Link
                   className="text-blue-800 hover:text-blue-900"
                   href={`/workshop/${workshop.slug}`}
                 >
                   Learn more <span>&rarr;</span>
                 </Link>
+                <small className="bg-green-400 px-2 py-1 rounded-md ms-4 text-sm">
+                  Upcoming
+                </small>
               </div>
             ))}
           </div>

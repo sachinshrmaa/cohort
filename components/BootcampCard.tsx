@@ -1,9 +1,9 @@
-import { WorkshopData } from "@/types/workshop";
+import { BootcampData } from "@/types/bootcamp";
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
 
-const WorkshopCard: FC<WorkshopData> = ({
+const BootcampCard: FC<BootcampData> = ({
   id,
   name,
   description,
@@ -26,10 +26,7 @@ const WorkshopCard: FC<WorkshopData> = ({
         <h1 className="text-2xl my-4 font-normal font-albert">{name}</h1>
         <p className="mb-4">{description}</p>
         <div className="flex justify-between items-center">
-          <Link
-            className="text-blue-800 hover:text-blue-900"
-            href={`/workshop/${slug}`}
-          >
+          <Link className="text-blue-800 hover:text-blue-900" href={`/${slug}`}>
             Learn more <span>&rarr;</span>
           </Link>
           <Link className="btn py-2" href={`/workshop/${slug}`}>
@@ -41,4 +38,4 @@ const WorkshopCard: FC<WorkshopData> = ({
   );
 };
 
-export default WorkshopCard;
+export default BootcampCard;

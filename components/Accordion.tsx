@@ -30,7 +30,7 @@ export default function Accordion({ name, content }) {
         className="bg-white py-2 px-4 my-4 rounded-md"
         style={{ display: isShowing ? "block" : "none" }}
       >
-        <p>{content}</p>
+        <div dangerouslySetInnerHTML={{ __html: content }}></div>
       </div>
     </div>
   );

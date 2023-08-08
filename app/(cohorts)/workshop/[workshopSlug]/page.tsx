@@ -77,11 +77,19 @@ export default function WorkshopPage({ params }) {
                 className="rounded-md w-full mb-6"
               />
 
-              <Link className="text-center" href="/">
-                <p className="btn py-2 = w-full">
-                  Enroll Now &nbsp; ₹{cohort.price}.0
-                </p>
-              </Link>
+              {cohort.status === "active" ? (
+                <Link className="text-center" href="/">
+                  <p className="btn py-2 = w-full">
+                    Enroll Now &nbsp; ₹{cohort.price}.0
+                  </p>
+                </Link>
+              ) : (
+                <Link className="text-center" href="/">
+                  <p className="btn py-2 = w-full">
+                    Join Waitlist →
+                  </p>
+                </Link>
+              )}
 
               <div className="mt-8">
                 <h2 className="text-xl my-6 font-semibold">Share this Class</h2>

@@ -6,5 +6,6 @@ export type WorkshopData = {
   name: string;
   description: string;
   price: number;
+  status: string;
   thumbnail: string;
 };

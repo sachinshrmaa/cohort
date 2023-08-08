@@ -77,11 +77,27 @@ export default function BootcampPage({ params }) {
                   <div key={moduleKey}>
                     <Accordion
                       key={moduleKey}
-                      name={cohort.content.modules[moduleKey].name} 
-                      content={cohort.content.modules[moduleKey].content} 
+                      name={cohort.content.modules[moduleKey].name}
+                      content={cohort.content.modules[moduleKey].content}
                     />
                   </div>
                 ))}
+
+                <div className="mt-8">
+                  <small>
+                    <b>Disclaimer: </b>While we strive to provide the best learning
+                    experience possible, please note that the course outline
+                    mentioned above is subject to minor adjustments based on
+                    factors such as student progress, emerging technologies, and
+                    industry trends. Our primary goal is to ensure that you
+                    receive the most up-to-date and relevant education in the
+                    field of web development. Any modifications to the course
+                    outline will be made with the intention of enhancing your
+                    learning journey. We appreciate your understanding and
+                    flexibility as we work together to provide you with a
+                    top-notch educational experience
+                  </small>
+                </div>
               </div>
             </div>
             <div className="hidden md:block md:col-span-2">

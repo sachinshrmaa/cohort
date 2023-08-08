@@ -1,6 +1,7 @@
 import { type } from "os";
 
 interface BootcampModule {
+  id: number,
   name: string;
   content: string;
 }
