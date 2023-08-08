@@ -5,6 +5,7 @@ import React from "react";
 import NotFound from "@/app/not-found";
 import { Metadata } from "next";
 import Accordion from "@/components/Accordion";
+import WaitlistModal from "@/components/WaitlistModal";
 
 type Props = {
   params: { bootcampSlug: string };
@@ -63,9 +64,7 @@ export default function BootcampPage({ params }) {
                   </p>
                 </Link>
               ) : (
-                <Link className="text-center" href="/">
-                  <p className="btn py-2 = w-full">Join Waitlist →</p>
-                </Link>
+                <WaitlistModal />
               )}
             </div>
             <div className="md:col-span-4 md:w-[92%]">
@@ -122,9 +121,7 @@ export default function BootcampPage({ params }) {
                   </p>
                 </Link>
               ) : (
-                <Link className="text-center" href="/">
-                  <p className="btn py-2 = w-full">Join Waitlist →</p>
-                </Link>
+                <WaitlistModal />
               )}
 
               <div className="mt-8">

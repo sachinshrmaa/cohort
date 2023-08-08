@@ -14,6 +14,6 @@
 - [] improve performance
 - [] add readme page
 - [] add google analytics measure
-- []
+- [] add style to fucus property
 - []
 - []

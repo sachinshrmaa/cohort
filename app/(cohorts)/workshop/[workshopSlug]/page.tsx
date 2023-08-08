@@ -5,6 +5,7 @@ import Link from "next/link";
 import React from "react";
 import NotFound from "@/app/not-found";
 import { Metadata } from "next";
+import WaitlistModal from "@/components/WaitlistModal";
 
 type Props = {
   params: { workshopSlug: string };
@@ -84,11 +85,7 @@ export default function WorkshopPage({ params }) {
                   </p>
                 </Link>
               ) : (
-                <Link className="text-center" href="/">
-                  <p className="btn py-2 = w-full">
-                    Join Waitlist →
-                  </p>
-                </Link>
+                <WaitlistModal/>
               )}
 
               <div className="mt-8">
