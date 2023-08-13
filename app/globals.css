@@ -20,6 +20,22 @@ body {
   max-width: 1140px;
 }
 
+
+.content h4{
+  margin: 17px 0;
+  font-weight: 800;
+  font-size: 18px;
+  color: #383838;
+}
+
+.content ul{
+   margin:7px 30px;
+}
+
+.content li{
+  list-style: block;
+}
+
 /* Media queries for responsiveness */
 @media (min-width: 576px) {
   .container {

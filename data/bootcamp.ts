@@ -9,7 +9,7 @@ const bootcamps: BootcampData[] = [
       "Master the art of web development with our intensive 12 weeks Full Stack Web Development Bootcamp. ",
     price: 4999,
     status: "upcoming",
-    thumbnail: "/img/Open-Source-Workshop.jpg",
+    thumbnail: "/img/modern-web-development.png",
     content: {
       body: "Learn HTML5, CSS3, JavaScript, React, Next.js, Git, Node.js, MongoDB, authentication, deployment, and more. Build real-world projects, optimize performance, and create a stunning portfolio. Elevate your skills and launch your career in tech.",
       modules: [

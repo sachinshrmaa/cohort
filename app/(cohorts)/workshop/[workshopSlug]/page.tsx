@@ -57,7 +57,33 @@ export default function WorkshopPage({ params }) {
                 priority
               />
 
-              <Link className="text-center" href="/">
+              <div className="mt-8">
+                <h2 className="text-xl my-6 font-semibold">Cohort Details</h2>
+                <ul className="list-disc ms-6 my-4">
+                  <li>
+                    <b>Start Date: </b>
+                    {cohort.detail.start}
+                  </li>
+                  <li>
+                    <b>End Date: </b>
+                    {cohort.detail.end}
+                  </li>
+                  <li>
+                    <b>Cohort Duration: </b>
+                    {cohort.detail.duration}
+                  </li>
+                  <li>
+                    <b>Timing: </b>
+                    {cohort.detail.timing}
+                  </li>
+                  <li>
+                    <b>Batch Size: </b>
+                    {cohort.detail.size}
+                  </li>
+                </ul>
+              </div>
+
+              <Link className="text-center" href={cohort.registration_link}>
                 <p className="btn py-2 w-full">
                   Enroll Now &nbsp; ₹{cohort.price}.0
                 </p>
@@ -67,7 +93,26 @@ export default function WorkshopPage({ params }) {
               <h1 className="text-2xl font-semibold font-poppins mb-6 leading-8 md:leading-[50px] md:text-4xl">
                 {cohort.name}
               </h1>
-              <p className="text-md md:text-lg">{cohort.description}</p>
+              <p className="text-md md:text-lg mb-4">{cohort.description}</p>
+
+              <h2 className="text-xl my-6 font-semibold">Contents Covered</h2>
+              <div dangerouslySetInnerHTML={{ __html: cohort.content }}></div>
+
+              <div className="mt-8">
+                <small>
+                  <b>Disclaimer: </b>While we strive to provide the best
+                  learning experience possible, please note that the course
+                  outline mentioned above is subject to minor adjustments based
+                  on factors such as student progress, emerging technologies,
+                  and industry trends. Our primary goal is to ensure that you
+                  receive the most up-to-date and relevant education in the
+                  field of web development. Any modifications to the course
+                  outline will be made with the intention of enhancing your
+                  learning journey. We appreciate your understanding and
+                  flexibility as we work together to provide you with a
+                  top-notch educational experience
+                </small>
+              </div>
             </div>
             <div className="hidden md:block md:col-span-2">
               <Image
@@ -79,14 +124,40 @@ export default function WorkshopPage({ params }) {
               />
 
               {cohort.status === "active" ? (
-                <Link className="text-center" href="/">
+                <Link className="text-center" href={cohort.registration_link}>
                   <p className="btn py-2 = w-full">
                     Enroll Now &nbsp; ₹{cohort.price}.0
                   </p>
                 </Link>
               ) : (
-                <WaitlistModal/>
+                <WaitlistModal />
               )}
+
+              <div className="mt-8">
+                <h2 className="text-xl my-6 font-semibold">Cohort Details</h2>
+                <ul className="list-disc ms-6 my-4">
+                  <li>
+                    <b>Start Date: </b>
+                    {cohort.detail.start}
+                  </li>
+                  <li>
+                    <b>End Date: </b>
+                    {cohort.detail.end}
+                  </li>
+                  <li>
+                    <b>Cohort Duration: </b>
+                    {cohort.detail.duration}
+                  </li>
+                  <li>
+                    <b>Timing: </b>
+                    {cohort.detail.timing}
+                  </li>
+                  <li>
+                    <b>Batch Size: </b>
+                    {cohort.detail.size}
+                  </li>
+                </ul>
+              </div>
 
               <div className="mt-8">
                 <h2 className="text-xl my-6 font-semibold">Share this Class</h2>

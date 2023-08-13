@@ -131,7 +131,11 @@ export default function Home() {
                   Learn more <span>&rarr;</span>
                 </Link>
                 <small className="bg-green-400 px-2 py-1 rounded-md ms-4 text-sm">
-                  Upcoming
+                  {workshop.status === "upcoming" ? (
+                    <span>Upcoming</span>
+                  ) : (
+                    <span>Enroll Open</span>
+                  )}
                 </small>
               </div>
             ))}
