@@ -155,7 +155,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="columns-1 md:columns-3 lg:columns-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 items-start">
             {testimonials.map((testimony, index) => (
               <TestimonialCard
                 id={testimony.id}
