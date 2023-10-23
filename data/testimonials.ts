@@ -32,23 +32,7 @@ const testimonials: TestimonialData[] = [
       "I'd like to give a shoutout to Sachin K. Sharma , who was an integral part of our project. His expertise and dedication were instrumental in ensuring the project's success. He always went above and beyond to make sure that the task was completed on time and to the best of his abilities. His contributions to the team were greatly appreciated and helped us achieve our goals. Thank you for your hard work and dedication, Sachin K. Sharma!",
     organization: "NIELIT, Sikkim",
     keywords: "Expertise and Dedication",
-  }, 
-  {
-    id: 5,
-    name: "Roshan Shah",
-    message:
-      "Love the classes. Very interactive and understood the concept very well. Very friendly classes which made me ask questions more comfortably",
-    organization: "VIT, Andhra Pradesh",
-    keywords: "Very interactive, Very friendly",
-  },
-   {
-    id: 6,
-    name: "Roshan Shah",
-    message:
-      "Love the classes. Very interactive and understood the concept very well. Very friendly classes which made me ask questions more comfortably",
-    organization: "VIT, Andhra Pradesh",
-    keywords: "Very interactive, Very friendly",
-  },
+  }
 ];
 
 export default testimonials;
