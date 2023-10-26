@@ -2,7 +2,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 
-const TestBar = () => {
+const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -93,4 +93,4 @@ const TestBar = () => {
   );
 };
 
-export default TestBar;
+export default NavBar;

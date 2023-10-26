@@ -151,7 +151,7 @@ export default function Home() {
               Wall of Love...
             </h1>
             <p className="mb-8 text-md">
-              What other people has to say about the basics className
+              What other people has to say about the basics class..
             </p>
           </div>
 
