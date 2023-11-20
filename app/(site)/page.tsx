@@ -42,7 +42,7 @@ export default function Home() {
               </p>
 
               <Link className="btn" href="#courses">
-                Explore Cohorts
+                Explore Workshops
               </Link>
             </div>
             <div className="hidden md:block">
