@@ -45,7 +45,7 @@ export default function CohortContainer() {
   }
 
   return (
-    <div className="my-6 grid grid-cols-3 gap-8">
+    <div className="my-6 grid grid-cols-2 gap-8">
       {cohorts.map((cohort) => (
         <CohortCard
           title={cohort.name}

@@ -35,7 +35,7 @@ export default function DetailedCohort({ params }) {
 
   if (loading) {
     return (
-      <div className="max-w-7xl mx-auto grid grid-cols-5 gap-10 my-6">
+      <div className="max-w-6xl mx-auto px-4 py-6 lg:px-8 grid grid-cols-5 gap-10 my-6">
         <Skeleton active className="col-span-3" />
         <Skeleton.Image active className="col-span-2" />
       </div>
@@ -53,7 +53,7 @@ export default function DetailedCohort({ params }) {
   }
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-6">
+    <div className="max-w-6xl mx-auto px-4 py-6 lg:px-8">
       <Link href="/" className="text-blue-700">
         &larr; back to home
       </Link>
